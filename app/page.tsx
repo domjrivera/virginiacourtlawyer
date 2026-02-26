@@ -1,65 +1,103 @@
-import Image from "next/image";
+import Link from "next/link";
+import { Scale, Shield, Users } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      {/* Hero */}
+      <section className="hero-bg text-white py-32 text-center">
+        <div className="max-w-4xl mx-auto px-6">
+          <h1 className="text-5xl md:text-6xl font-serif leading-tight mb-6">
+            Your Freedom.<br />My Fight.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-2xl text-gold mb-10">Criminal Defense Attorney D.J. Rivera</p>
+          <p className="max-w-2xl mx-auto text-lg mb-10">
+            Serving clients throughout Greater Richmond and Northern Virginia. 
+            Aggressive defense against every criminal charge under Virginia law.
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="bg-crimson hover:bg-red-700 text-white px-10 py-4 rounded text-lg font-medium transition">
+              Get Your Free Consultation
+            </Link>
+            <Link href="/practice-areas" className="border-2 border-white hover:bg-white hover:text-navy px-10 py-4 rounded text-lg font-medium transition">
+              View Practice Areas
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Quick Stats */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
+          <div className="flex flex-col items-center">
+            <Scale className="w-12 h-12 text-gold mb-4" />
+            <div className="text-4xl font-bold text-navy">100+</div>
+            <div className="text-slate-600 mt-1">Virginia Court Victories</div>
+          </div>
+          <div className="flex flex-col items-center">
+            <Shield className="w-12 h-12 text-gold mb-4" />
+            <div className="text-4xl font-bold text-navy">2 Regions</div>
+            <div className="text-slate-600 mt-1">Richmond & Northern VA</div>
+          </div>
+          <div className="flex flex-col items-center">
+            <Users className="w-12 h-12 text-gold mb-4" />
+            <div className="text-4xl font-bold text-navy">24/7</div>
+            <div className="text-slate-600 mt-1">Emergency Availability</div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Practice Areas Teaser */}
+      <section className="py-20 bg-slate-100">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-serif text-center mb-12">Practice Areas</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-8 rounded shadow hover:shadow-xl transition">
+              <h3 className="font-semibold text-xl mb-2">DUI / DWI Defense</h3>
+              <p className="text-slate-600">Virginia Code §18.2-266 and all related charges</p>
+            </div>
+            <div className="bg-white p-8 rounded shadow hover:shadow-xl transition">
+              <h3 className="font-semibold text-xl mb-2">Drug Crimes</h3>
+              <p className="text-slate-600">Possession, distribution, PWID, marijuana, cocaine, fentanyl</p>
+            </div>
+            <div className="bg-white p-8 rounded shadow hover:shadow-xl transition">
+              <h3 className="font-semibold text-xl mb-2">Assault & Battery</h3>
+              <p className="text-slate-600">§18.2-57, aggravated malicious wounding, domestic assault</p>
+            </div>
+          </div>
+          <div className="text-center mt-12">
+            <Link href="/practice-areas" className="text-navy underline hover:text-crimson">See All Practice Areas →</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Locations */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-serif mb-8">Serving Courts Across Virginia</h2>
+          <div className="grid md:grid-cols-2 gap-12 max-w-2xl mx-auto">
+            <div>
+              <h3 className="text-2xl font-medium mb-4 text-navy">Greater Richmond Area</h3>
+              <p className="text-lg">Richmond • Henrico • Chesterfield • Hanover</p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-medium mb-4 text-navy">Northern Virginia</h3>
+              <p className="text-lg">Alexandria • Arlington • Fairfax • Prince William</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="bg-navy text-white py-20 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-4xl font-serif mb-6">Charged with a crime in Virginia?</h2>
+          <p className="text-xl mb-10">Don’t face the Commonwealth alone. Get experienced, aggressive representation today.</p>
+          <Link href="/contact" className="inline-block bg-gold hover:bg-amber-600 text-navy px-12 py-5 rounded text-xl font-medium transition">
+            Schedule Your Free Consultation
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }
