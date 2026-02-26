@@ -1,6 +1,19 @@
 import Link from "next/link";
 import { Scale, Shield, Users } from "lucide-react";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Virginia Court Lawyer | Criminal Defense Attorney D.J. Rivera – Richmond & Northern VA",
+  description: "Aggressive criminal defense for all charges in Greater Richmond (Richmond, Henrico, Chesterfield, Hanover) and Northern Virginia (Alexandria, Arlington, Fairfax, Prince William). Free consultation.",
+  keywords: ["Virginia criminal defense lawyer", "Richmond criminal attorney", "Northern Virginia DUI lawyer", "D.J. Rivera", "Virginia Code defense"],
+  openGraph: {
+    title: "Virginia Court Lawyer – D.J. Rivera Criminal Defense",
+    description: "Protecting your freedom in Virginia courts.",
+    images: [{ url: "/logo.png" }],
+  },
+};
+
 export default function Home() {
   return (
     <>
