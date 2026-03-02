@@ -1,0 +1,45 @@
+import { Metadata } from 'next';
+import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Richmond & Northern VA Drug Distribution Lawyer | §18.2-248 Defense",
+  description: "Aggressive defense for drug distribution, manufacturing, PWID, and trafficking charges in Greater Richmond and Northern Virginia courts. §18.2-248 cases dismissed or reduced.",
+  keywords: ["Richmond drug distribution lawyer", "Northern Virginia drug trafficking attorney", "Virginia Code 18.2-248", "Fairfax PWID defense", "Chesterfield cocaine lawyer", "D.J. Rivera"],
+};
+
+export default function DrugDistributionPage() {
+  return (
+    <div className="max-w-5xl mx-auto px-6 py-16 prose prose-slate max-w-none">
+      <div className="text-center mb-16">
+        <h1 className="text-5xl font-serif text-navy mb-6">Virginia Drug Distribution & Manufacturing Defense</h1>
+        <p className="text-2xl text-crimson">§ 18.2-248 • D.J. Rivera, Esq.</p>
+      </div>
+
+      <h2 className="text-3xl font-serif text-navy mt-16">The Law: Virginia Code § 18.2-248</h2>
+      <div className="bg-slate-100 p-8 rounded-xl my-8 text-sm leading-relaxed border-l-4 border-crimson">
+        Except as authorized in this chapter, it shall be unlawful for any person to manufacture, sell, give, distribute, or possess with intent to manufacture, sell, give or distribute a controlled substance.
+      </div>
+
+      <h2 className="text-3xl font-serif text-navy mt-16">Penalties</h2>
+      <ul className="list-disc pl-6 space-y-3 text-lg">
+        <li>Schedule I/II (fentanyl, cocaine, heroin, meth): 5–40 years (mandatory minimums apply)</li>
+        <li>Large quantities or repeat offenses: Life imprisonment possible</li>
+      </ul>
+
+      <h2 className="text-3xl font-serif text-navy mt-16">Defense Strategies</h2>
+      <ul className="list-disc pl-6 space-y-4 text-lg">
+        <li>Lack of intent to distribute (personal use only)</li>
+        <li>Illegal search & seizure of vehicle/home</li>
+        <li>Chain of custody or lab testing errors</li>
+        <li>Entrapment or confidential informant issues</li>
+        <li>Negotiating to simple possession or diversion</li>
+      </ul>
+
+      <div className="mt-20 bg-navy text-white p-12 rounded-3xl text-center">
+        <Link href="/contact" className="inline-block bg-gold hover:bg-amber-600 text-navy px-16 py-6 rounded text-2xl font-medium transition">
+          Free Consultation – Fight Serious Drug Charges
+        </Link>
+      </div>
+    </div>
+  );
+}
