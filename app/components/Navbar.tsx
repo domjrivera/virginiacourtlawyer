@@ -9,6 +9,7 @@ export default function Navbar() {
   return (
     <nav className="bg-navy text-white sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <img src="/logo.png" alt="Virginia Court Lawyer Logo" className="h-12 w-auto" />
           <div>
@@ -16,30 +17,35 @@ export default function Navbar() {
             <div className="text-xs text-gold -mt-1">D.J. Rivera, Esq.</div>
           </div>
         </Link>
-        
+
+        {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 text-sm font-medium">
-       	   <Link href="/about" className="hover:text-gold transition">About</Link>
-           <Link href="/practice-areas" className="hover:text-gold transition">Practice Areas</Link>
-           <Link href="/case-studies" className="hover:text-gold transition">Case Studies</Link>
-           <Link href="/locations" className="hover:text-gold transition">Locations</Link>
-           <Link href="/contact" className="hover:text-gold transition">Contact</Link>
-     	</div>
+          <Link href="/about" className="hover:text-gold transition">About</Link>
+          <Link href="/practice-areas" className="hover:text-gold transition">Practice Areas</Link>
+          <Link href="/case-studies" className="hover:text-gold transition">Case Studies</Link>
+          <Link href="/locations" className="hover:text-gold transition">Locations</Link>
+          <Link href="/contact" className="hover:text-gold transition">Contact</Link>
+        </div>
 
-
-        <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden">
+        {/* Mobile Hamburger */}
+        <button 
+          onClick={() => setMobileOpen(!mobileOpen)} 
+          className="md:hidden"
+        >
           <Menu size={28} />
         </button>
       </div>
 
+      {/* Mobile Menu */}
       {mobileOpen && (
-      	<div className="hidden md:flex gap-8 text-sm font-medium">
-	  <Link href="/about" className="hover:text-gold transition">About</Link>
-	  <Link href="/practice-areas" className="hover:text-gold transition">Practice Areas</Link>
-	  <Link href="/case-studies" className="hover:text-gold transition">Case Studies</Link>
-	  <Link href="/locations" className="hover:text-gold transition">Locations</Link>
-	  <Link href="/contact" className="hover:text-gold transition">Contact</Link>
-	</div>
-
+        <div className="md:hidden bg-navy border-t border-white/20 py-6">
+          <div className="flex flex-col items-center gap-8 text-lg">
+            <Link href="/about" onClick={() => setMobileOpen(false)}>About</Link>
+            <Link href="/practice-areas" onClick={() => setMobileOpen(false)}>Practice Areas</Link>
+            <Link href="/case-studies" onClick={() => setMobileOpen(false)}>Case Studies</Link>
+            <Link href="/locations" onClick={() => setMobileOpen(false)}>Locations</Link>
+            <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact</Link>
+          </div>
         </div>
       )}
     </nav>
