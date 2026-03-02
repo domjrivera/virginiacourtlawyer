@@ -34,10 +34,23 @@ export default function DrugDistributionPage() {
         <li>Entrapment or confidential informant issues</li>
         <li>Negotiating to simple possession or diversion</li>
       </ul>
+{/* ==================== FEDERAL SECTION ==================== */}
+      <h2 className="text-4xl font-serif text-navy border-b border-gold pb-4 mt-24 mb-12">Federal Drug Trafficking Charges (EDVA)</h2>
+      <p className="text-lg mb-10">Northern Virginia cases frequently get picked up by federal prosecutors under 21 U.S.C. § 841 (distribution) and § 846 (conspiracy).</p>
+
+      <div className="bg-slate-100 p-8 rounded-xl my-8 text-sm leading-relaxed border-l-4 border-crimson">
+        It shall be unlawful for any person knowingly or intentionally to manufacture, distribute, or dispense, or possess with intent to manufacture, distribute, or dispense, a controlled substance... (21 U.S.C. § 841).
+      </div>
+
+      <h2 className="text-3xl font-serif text-navy mt-16">Federal Penalties</h2>
+      <ul className="list-disc pl-6 space-y-3 text-lg">
+        <li>5–40 years (or life) depending on quantity and priors</li>
+        <li>Mandatory minimums for 5+ grams of cocaine base, 500+ grams of cocaine, etc.</li>
+      </ul>
 
       <div className="mt-20 bg-navy text-white p-12 rounded-3xl text-center">
         <Link href="/contact" className="inline-block bg-gold hover:bg-amber-600 text-navy px-16 py-6 rounded text-2xl font-medium transition">
-          Free Consultation – Fight Serious Drug Charges
+          Free Consultation – State or Federal Drug Charges
         </Link>
       </div>
     </div>
