@@ -16,13 +16,15 @@ export default function Navbar() {
             <div className="text-xs text-gold -mt-1">D.J. Rivera, Esq.</div>
           </div>
         </Link>
-
+        
         <div className="hidden md:flex gap-8 text-sm font-medium">
-          <Link href="/about" className="hover:text-gold transition">About</Link>
-          <Link href="/practice-areas" className="hover:text-gold transition">Practice Areas</Link>
-          <Link href="/locations" className="hover:text-gold transition">Locations</Link>
-          <Link href="/contact" className="hover:text-gold transition">Contact</Link>
-        </div>
+       	   <Link href="/about" className="hover:text-gold transition">About</Link>
+           <Link href="/practice-areas" className="hover:text-gold transition">Practice Areas</Link>
+           <Link href="/case-studies" className="hover:text-gold transition">Case Studies</Link>
+           <Link href="/locations" className="hover:text-gold transition">Locations</Link>
+           <Link href="/contact" className="hover:text-gold transition">Contact</Link>
+     	</div>
+
 
         <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden">
           <Menu size={28} />
@@ -30,13 +32,14 @@ export default function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-navy border-t border-white/20 py-4">
-          <div className="flex flex-col items-center gap-6 text-lg">
-            <Link href="/about" onClick={() => setMobileOpen(false)}>About</Link>
-            <Link href="/practice-areas" onClick={() => setMobileOpen(false)}>Practice Areas</Link>
-            <Link href="/locations" onClick={() => setMobileOpen(false)}>Locations</Link>
-            <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact</Link>
-          </div>
+      	<div className="hidden md:flex gap-8 text-sm font-medium">
+	  <Link href="/about" className="hover:text-gold transition">About</Link>
+	  <Link href="/practice-areas" className="hover:text-gold transition">Practice Areas</Link>
+	  <Link href="/case-studies" className="hover:text-gold transition">Case Studies</Link>
+	  <Link href="/locations" className="hover:text-gold transition">Locations</Link>
+	  <Link href="/contact" className="hover:text-gold transition">Contact</Link>
+	</div>
+
         </div>
       )}
     </nav>
