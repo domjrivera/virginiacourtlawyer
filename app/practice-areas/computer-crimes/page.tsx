@@ -2,13 +2,9 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Virginia Computer Crimes Lawyer | Federal CFAA Defense Richmond & Northern VA",
-  description: "Aggressive defense against Virginia Computer Crimes (§18.2-152) and federal cybercrimes (CFAA 18 U.S.C. §1030, wire fraud, identity theft, child exploitation) in Richmond, Henrico, Chesterfield, Hanover, Alexandria, Arlington, Fairfax & Prince William.",
-  keywords: ["Virginia computer crimes lawyer", "Richmond CFAA attorney", "Northern Virginia hacking defense", "18 U.S.C. 1030 defense", "computer fraud defense Virginia", "EDVA cybercrime", "cyberbullying lawyer Richmond", "Fairfax identity theft lawyer"],
-  openGraph: {
-    title: "Virginia & Federal Computer Crimes Defense – D.J. Rivera, Esq.",
-    description: "Experienced defense in both state and federal court for all cyber-related charges.",
-  },
+  title: "Virginia & Federal Computer Crimes Lawyer | CFAA & §18.2-152 Defense – Richmond & Northern VA",
+  description: "D.J. Rivera (tech-background attorney) provides aggressive defense for Virginia computer crimes (§18.2-152) and federal cyber offenses (CFAA 18 U.S.C. §1030) in Richmond, Henrico, Fairfax, Arlington, and the Eastern District of Virginia (EDVA).",
+  keywords: ["Virginia computer crimes lawyer", "federal CFAA attorney Northern Virginia", "Richmond cyber crime defense", "18 U.S.C. 1030 defense", "EDVA hacking lawyer", "computer fraud defense Virginia", "D.J. Rivera"],
 };
 
 export default function ComputerCrimesPage() {
@@ -16,14 +12,15 @@ export default function ComputerCrimesPage() {
     <div className="max-w-5xl mx-auto px-6 py-16 prose prose-slate max-w-none">
       <div className="text-center mb-16">
         <h1 className="text-5xl font-serif text-navy mb-6">Virginia & Federal Computer Crimes Defense</h1>
-        <p className="text-2xl text-crimson">§18.2-152 Series • 18 U.S.C. § 1030 (CFAA) • Serving Richmond & Northern Virginia</p>
-        <p className="mt-8 text-xl">D.J. Rivera provides aggressive, experienced defense for every type of computer and cyber-related criminal charge in both Virginia state courts and the Eastern District of Virginia federal court.</p>
+        <p className="text-2xl text-crimson">§18.2-152 Series • 18 U.S.C. § 1030 (CFAA) • Eastern District of Virginia</p>
+        <p className="mt-8 text-xl max-w-3xl mx-auto">
+          With D.J. Rivera’s strong computer technology background, clients receive cutting-edge technical defenses in both state and federal court — from forensic analysis and authorized-access arguments to malware dissection and digital evidence challenges.
+        </p>
       </div>
 
-      <div className="bg-amber-50 border border-amber-200 p-8 rounded-2xl mb-16">
-        <p className="font-medium text-amber-800">Important: Many computer cases in Northern Virginia trigger federal charges. Having an attorney experienced in both systems can make the difference between conviction and dismissal.</p>
-      </div>
-
+      {/* VIRGINIA SECTION (unchanged from before) */}
+      <h2 className="text-4xl font-serif text-navy border-b border-gold pb-4 mb-12">Virginia Computer Crimes (§ 18.2-152 et seq.)</h2>
+      {/* [Paste your existing Virginia sections here — Computer Fraud, Trespass, Invasion of Privacy, etc. — they stay exactly the same] */}
       {/* ==================== VIRGINIA SECTION ==================== */}
       <h2 className="text-4xl font-serif text-navy border-b border-gold pb-4 mb-12">Virginia Computer Crimes (§ 18.2-152 et seq.)</h2>
 
@@ -85,53 +82,57 @@ export default function ComputerCrimesPage() {
         </div>
       </div>
 
-      {/* ==================== FEDERAL SECTION ==================== */}
-      <h2 className="text-4xl font-serif text-navy border-b border-gold pb-4 mt-24 mb-12">Federal Cybercrime Statutes</h2>
-      <p className="text-lg mb-10">Clients in Northern Virginia are frequently charged in the Eastern District of Virginia (EDVA) — one of the most aggressive federal districts for cybercrime prosecutions in the country.</p>
 
-      <div className="space-y-16">
+      {/* ==================== NEW FEDERAL SECTION (Flagship) ==================== */}
+      <h2 className="text-4xl font-serif text-navy border-b border-gold pb-4 mt-24 mb-12">Federal Computer Crimes (Eastern District of Virginia – EDVA)</h2>
+      <p className="text-lg mb-10">Northern Virginia cases are routinely prosecuted in the EDVA — one of the most aggressive federal districts for cybercrime. D.J. Rivera’s technical expertise gives clients a powerful advantage.</p>
+
+      <div className="space-y-20">
         <div>
           <h3 className="text-2xl font-semibold text-navy">18 U.S.C. § 1030 — Computer Fraud and Abuse Act (CFAA)</h3>
-          <div className="bg-slate-100 p-8 rounded-xl my-6 text-sm leading-relaxed border-l-4 border-crimson">
-            The primary federal “hacking” law. Covers unauthorized access to protected computers, obtaining information, causing damage, fraud, password trafficking, and extortion. Applies to almost any internet-connected device.
+          <div className="bg-slate-100 p-8 rounded-xl my-8 text-sm leading-relaxed border-l-4 border-crimson">
+            The cornerstone federal “hacking” statute. Covers unauthorized access to protected computers, obtaining information, causing damage, fraud, password trafficking, and extortion.
           </div>
-          <p><strong>Penalties:</strong> Range from misdemeanors to 20+ years in federal prison depending on damage, intent, and loss caused.</p>
-          <p className="mt-4"><strong>Defense Strategies:</strong> “Authorized access” or “exceeding authorized access” challenges (key after Van Buren v. United States Supreme Court ruling), lack of intent, no damage caused, overbroad application of the statute.</p>
+          <p><strong>Penalties:</strong> Up to 10–20+ years in federal prison depending on loss, damage, and intent.</p>
+          <p className="mt-4"><strong>Technical Defenses (leveraging D.J. Rivera’s tech background):</strong></p>
+          <ul className="list-disc pl-6 space-y-2 text-lg">
+            <li>Authorized access / exceeding authorized access (post-Van Buren Supreme Court ruling)</li>
+            <li>No “damage” or “loss” under the CFAA definition</li>
+            <li>Forensic challenges — IP spoofing, malware attribution, shared devices</li>
+            <li>Lack of intent or reckless conduct only</li>
+          </ul>
         </div>
 
         <div>
           <h3 className="text-2xl font-semibold text-navy">18 U.S.C. § 1343 — Wire Fraud</h3>
-          <p className="text-lg">Using electronic communications (email, internet, wire transfers) in furtherance of a scheme to defraud. Frequently charged alongside CFAA.</p>
-          <p><strong>Penalties:</strong> Up to 20 years (30 years if a financial institution or disaster relief is involved).</p>
+          <p className="text-lg">Using email, internet, or electronic communications in a scheme to defraud. Frequently paired with CFAA charges.</p>
+          <p><strong>Penalties:</strong> Up to 20 years (30 years if financial institution involved).</p>
         </div>
 
         <div>
-          <h3 className="text-2xl font-semibold text-navy">18 U.S.C. § 1028 & § 1028A — Identity Theft & Aggravated Identity Theft</h3>
-          <p className="text-lg">Knowingly using another person’s identification to commit fraud. Aggravated identity theft carries a mandatory additional 2-year consecutive sentence.</p>
+          <h3 className="text-2xl font-semibold text-navy">18 U.S.C. § 1028 / § 1028A — Identity Theft & Aggravated Identity Theft</h3>
+          <p className="text-lg">Knowingly using another’s identification. Aggravated identity theft adds a mandatory consecutive 2-year sentence.</p>
         </div>
 
         <div>
           <h3 className="text-2xl font-semibold text-navy">Child Exploitation & CSAM Offenses (18 U.S.C. §§ 2251–2252A)</h3>
-          <p className="text-lg">Receipt, distribution, possession, or production of child sexual abuse material over the internet. Extremely serious federal charges with mandatory minimum sentences of 5–15+ years.</p>
+          <p className="text-lg">Receipt, distribution, possession, or production of child sexual abuse material via computer. Extremely serious federal cases with mandatory minimums of 5–15+ years.</p>
+          <p className="mt-4 text-red-700 font-medium">Technical defenses here are critical — chain-of-custody, device ownership, and forensic analysis often determine outcomes.</p>
         </div>
       </div>
 
-      {/* Defense Strategies */}
-      <h2 className="text-4xl font-serif text-navy mt-24 mb-10">Common Defense Strategies in Computer Crime Cases</h2>
+      <h2 className="text-4xl font-serif text-navy mt-24 mb-10">Why Clients Choose D.J. Rivera for Computer Crimes</h2>
       <ul className="list-disc pl-8 space-y-4 text-lg">
-        <li>Challenging whether access was truly “without authority” or “exceeding authorized access”</li>
-        <li>Suppression of evidence from unlawful searches or warrants</li>
-        <li>Computer forensics challenges — proving who actually committed the act</li>
-        <li>Lack of criminal intent or mistaken belief of authorization</li>
-        <li>Negotiating reduced charges or pretrial diversion</li>
-        <li>Minimizing federal sentencing exposure under the U.S. Sentencing Guidelines</li>
+        <li>Deep technical understanding of computers, networks, and digital forensics</li>
+        <li>Experience challenging government experts in both state and federal court</li>
+        <li>Proven ability to reduce federal charges or secure dismissals through technical motions</li>
       </ul>
 
       <div className="mt-20 bg-navy text-white p-12 rounded-3xl text-center">
         <h3 className="text-4xl mb-6">Facing State or Federal Computer Crime Charges?</h3>
-        <p className="text-xl mb-8">Time is critical — especially in federal cases. Contact D.J. Rivera immediately for a confidential consultation.</p>
+        <p className="text-xl mb-8">Time is critical. Contact D.J. Rivera immediately for a confidential consultation.</p>
         <Link href="/contact" className="inline-block bg-gold hover:bg-amber-600 text-navy px-16 py-6 rounded text-2xl font-medium transition">
-          Get Your Free Consultation — 24/7 Availability
+          Free Consultation – 24/7 Availability
         </Link>
       </div>
     </div>
