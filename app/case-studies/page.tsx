@@ -2,23 +2,20 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Case Studies | Virginia Criminal Defense Wins – D.J. Rivera, Esq.",
-  description: "Recent Virginia and EDVA court cases with successful defense strategies. See how D.J. Rivera fights for clients in Richmond and Northern Virginia.",
+  title: "Case Studies | Virginia Solicitation of a Minor Defense Lawyer – D.J. Rivera, Esq.",
+  description: "Real Virginia and EDVA case outcomes in online solicitation of a minor and computer crimes. See how D.J. Rivera defends clients in Richmond and Northern Virginia.",
 };
 
 const cases = [
-  {
-    slug: "commonwealth-v-taylor",
-    title: "Commonwealth v. Taylor",
-    type: "Possession of Child Pornography (Computer Crimes)",
-    excerpt: "Federal & state charges dismissed after technical forensic challenge.",
-  },
-  {
-    slug: "commonwealth-v-ramirez",
-    title: "Commonwealth v. Ramirez",
-    type: "DUI / DWI – Refusal & Blood Test Challenge",
-    excerpt: "All charges reduced after successful suppression motion.",
-  },
+  { slug: "brooker-v-commonwealth", title: "Brooker v. Commonwealth (Va. Ct. App. 2003)", type: "Virginia Solicitation of a Minor Defense", excerpt: "Live webcam transmission convictions affirmed – key precedent." },
+  { slug: "colbert-v-commonwealth", title: "Colbert v. Commonwealth (Va. Ct. App. 2006)", type: "Virginia Solicitation of a Minor Defense", excerpt: "Sex-offender registration upheld even with undercover officer." },
+  { slug: "murgia-v-commonwealth", title: "Commonwealth v. Murgia (Va. Sup. Ct. 2019)", type: "Virginia Solicitation of a Minor Defense", excerpt: "Coach-student grooming via text messages leads to conviction." },
+  { slug: "delcid-v-commonwealth", title: "Commonwealth v. Delcid (Va. Ct. App. 2020)", type: "Virginia Solicitation of a Minor Defense", excerpt: "Miranda warnings ruled misleading – statements suppressed." },
+  { slug: "kilpatrick-v-commonwealth", title: "Commonwealth v. Kilpatrick (Va. Sup. Ct. 2022)", type: "Virginia Solicitation of a Minor Defense", excerpt: "Expert fantasy testimony excluded – overwhelming evidence." },
+  { slug: "mackey-v-commonwealth", title: "Mackey v. Commonwealth (Va. Ct. App. 2022)", type: "Virginia Solicitation of a Minor Defense", excerpt: "Lesser-included offense ruling protects due process." },
+  { slug: "anthony-v-commonwealth", title: "Anthony v. Commonwealth (Va. Ct. App. 2023)", type: "Virginia Solicitation of a Minor Defense", excerpt: "Autism sentencing relief must be properly preserved." },
+  { slug: "cribbs-v-commonwealth", title: "Cribbs v. Commonwealth (Va. Ct. App. 2024)", type: "Virginia Solicitation of a Minor Defense", excerpt: "Digital evidence chain-of-custody upheld." },
+  { slug: "cross-v-gilmore", title: "Cross v. Gilmore (E.D. Va. 2016)", type: "Virginia Solicitation of a Minor Defense", excerpt: "Federal habeas statute of limitations strictly applied." },
 ];
 
 export default function CaseStudies() {
@@ -27,7 +24,7 @@ export default function CaseStudies() {
       <div className="text-center mb-16">
         <h1 className="text-5xl font-serif text-navy mb-6">Case Studies</h1>
         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-          Real Virginia and EDVA cases where aggressive defense made the difference.
+          Real Virginia and EDVA outcomes in computer crimes and online solicitation of a minor cases.
         </p>
       </div>
 
