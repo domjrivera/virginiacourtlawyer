@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://virginiacourtlawyer.com
+
+# Sitemaps
+Sitemap: https://virginiacourtlawyer.com/sitemap.xml

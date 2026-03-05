@@ -6,13 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@aws-sdk/client-ses": "^3.1000.0",
     "aws-amplify": "^6.16.2",
     "lucide-react": "^0.575.0",
     "next": "16.1.6",
+    "next-sitemap": "^4.2.3",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
