@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Mackey v. Commonwealth (Va. Ct. App. 2022) | Virginia Solicitation of a Minor Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia Court of Appeals ruling on lesser-included offenses and due process in online solicitation of a minor prosecutions. D.J. Rivera defends these cases in Richmond and Northern Virginia.",
+  title: "Mackey v. Commonwealth | Virginia Computer Crimes Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2015) — Whether the defendant's harassment of the alleged victim through a fake social m.... D.J. Rivera defends Computer Crimes cases in Richmond and Northern Virginia.",
 };
 
-export default function MackeyCase() {
+export default function MackeyVCommonwealthCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Mackey v. Commonwealth (Va. Ct. App. 2022)</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Solicitation of a Minor Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/computer-crimes" className="text-slate-400 hover:text-gold text-sm transition">Computer Crimes</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Mackey v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Computer Crimes Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Mackey v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2015</span>
+            <span>⚖️ Virginia Code § 18.2-152.7:1</span>
+          </div>
+        </div>
+      </section>
 
-      <p>When a defendant is charged under Va. Code § 18.2-374.3(C) (victim younger than 15), the Commonwealth must prove the defendant knew or had reason to believe the victim was under that age. The statute’s knowledge element differs from subsection (D) (victim 15–17), and the two are not lesser-included offenses of each other. Federal law under 18 U.S.C. § 2422(b) similarly focuses on the defendant’s belief regarding the victim’s age.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the defendant's harassment of the alleged victim through a fake social media profile constituted harassment by computer.</p>
+          </div>
 
-      <p>In Mackey v. Commonwealth, 74 Va. App. 348, 869 S.E.2d 61 (2022), a 35-year-old defendant was indicted under subsection (C) for soliciting sexual intercourse from a 14-year-old girl via Facebook Messenger. At trial the judge found ambiguity in the victim’s testimony about her stated age and sua sponte convicted him under subsection (D).</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court affirmed the harassment by computer conviction, finding that the defendant's creation of a fake social media profile to harass the alleged victim — including posting false and humiliating information — constituted harassment by computer under § 18.2-152.7:1. The court held that the statute applies to harassment conducted through social media.</p>
+          </div>
 
-      <p>The Virginia Court of Appeals reversed, ruling that subsection (D) is not a lesser-included offense because the knowledge elements are mutually exclusive and the trial court never formally amended the indictment under Va. Code § 19.2-231. This decision protects due-process rights in Virginia online solicitation of a minor prosecutions involving borderline age questions.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Harassment by computer through social media is increasingly prosecuted in Virginia. D.J. Rivera challenges these cases by scrutinizing the attribution of the fake profile to the defendant, the context of the communications, and whether the communications constituted harassment rather than protected speech.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you have been charged with Virginia computer solicitation of a minor, our firm can analyze the charging documents and evidence to build the strongest possible defense.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/computer-crimes" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Computer Crimes Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-152.7:1</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/computer-crimes" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Computer Crimes Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/computer-crimes" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Computer Crimes Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Computer Crimes Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

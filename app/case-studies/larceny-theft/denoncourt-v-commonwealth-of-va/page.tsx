@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Denoncourt v. Commonwealth Of Va. | Virginia Larceny and Theft Defense Lawyer – D.J. Rivera, Esq.",
-  description: "This case clarifies the importance of intent in Virginia larceny charges and defense strategies.",
+  title: "DeNoncourt v. Commonwealth | Virginia Larceny & Theft Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2009) — Whether the value of the stolen property was sufficient to support a grand larce.... D.J. Rivera defends Larceny & Theft cases in Richmond and Northern Virginia.",
 };
 
 export default function DenoncourtVCommonwealthOfVaCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Denoncourt v. Commonwealth Of Va.</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Larceny and Theft Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/larceny-theft" className="text-slate-400 hover:text-gold text-sm transition">Larceny & Theft</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">DeNoncourt v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Larceny & Theft Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">DeNoncourt v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2009</span>
+            <span>⚖️ Virginia Code § 18.2-95</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia law, larceny is governed by Virginia Code § 18.2-95, which prohibits the unlawful taking of another person's property with the intent to permanently deprive them of it. The offense requires proof that the defendant knowingly took and carried away property without the owner's consent. Virginia's larceny statutes align closely with federal theft laws, such as those found in 18 U.S.C. § 641, which criminalize theft of government property, though state law typically addresses personal property theft within its jurisdiction. Understanding the elements of larceny is critical for defendants to mount an effective defense, particularly regarding intent and consent.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the value of the stolen property was sufficient to support a grand larceny conviction.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with larceny after allegedly taking property from a retail establishment without payment. The prosecution argued that the defendant intentionally concealed merchandise with the intent to steal, citing surveillance footage and witness testimony. Conversely, the defense contended that the defendant lacked the requisite intent to permanently deprive the owner, suggesting that the actions were accidental or misunderstood. The factual dispute centered on whether the defendant knowingly intended to commit theft or whether the circumstances indicated a lack of criminal intent.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court reversed the grand larceny conviction, finding that the prosecution failed to prove beyond a reasonable doubt that the value of the stolen property exceeded the grand larceny threshold. The court held that the value of stolen property must be proven by competent evidence — not merely by the alleged victim's subjective assessment.</p>
+          </div>
 
-      <p>The court held that the evidence sufficiently demonstrated the defendant's intent to commit larceny under Virginia Code § 18.2-95, affirming the conviction. The ruling emphasized that intent can be inferred from conduct, such as concealing merchandise and attempting to leave without payment. This case underscores the importance of intent in larceny prosecutions and illustrates that circumstantial evidence can satisfy this element. For defendants, the decision highlights the necessity of challenging the prosecution's proof of intent and the value of presenting alternative explanations for the alleged conduct.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">The value of stolen property determines whether the offense is grand larceny (felony) or petit larceny (misdemeanor). D.J. Rivera challenges the prosecution's evidence of value in every larceny case, often retaining independent appraisers to establish that the value was below the felony threshold.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Larceny and Theft Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/larceny-theft" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Larceny and Theft Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-95</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/larceny-theft" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Larceny & Theft Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/larceny-theft" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Larceny & Theft Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Larceny & Theft Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

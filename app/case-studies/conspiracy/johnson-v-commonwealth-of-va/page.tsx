@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Johnson v. Commonwealth of Va.. | Virginia Conspiracy Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia court requires proof of agreement and overt act for conspiracy conviction, protecting defendants from insufficient evidence.",
+  title: "Johnson v. Commonwealth | Virginia Conspiracy Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2009) — Whether the evidence was sufficient to prove an agreement between the defendants.... D.J. Rivera defends Conspiracy cases in Richmond and Northern Virginia.",
 };
 
 export default function JohnsonVCommonwealthOfVaCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Johnson v. Commonwealth of Va..</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Conspiracy Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/conspiracy" className="text-slate-400 hover:text-gold text-sm transition">Conspiracy</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Johnson v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Conspiracy Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Johnson v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2009</span>
+            <span>⚖️ Virginia Code § 18.2-22</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-22, conspiracy occurs when two or more persons agree to commit a felony or a misdemeanor that is punishable by confinement in jail or prison. The statute requires proof of an agreement and an overt act in furtherance of the conspiracy, although the overt act need not be illegal itself. This aligns with federal conspiracy law under 18 U.S.C. § 371, which similarly criminalizes agreements to commit offenses against the United States. Understanding the elements of conspiracy is critical, as mere association or preparation is insufficient for conviction without evidence of an agreement and an overt act.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the evidence was sufficient to prove an agreement between the defendants to commit the underlying felony.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with conspiracy to commit a felony based on communications and actions allegedly undertaken with co-conspirators. The prosecution argued that the defendant knowingly entered into an agreement to commit the offense and took concrete steps to advance the plan. The defense contended that the evidence showed only isolated discussions without any formal agreement or overt act, challenging the sufficiency of the prosecution’s proof on both elements.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court reversed the conspiracy conviction, finding that the prosecution failed to prove beyond a reasonable doubt that the defendants had agreed to commit the underlying felony. The court held that mere association between the defendants, without evidence of an agreement, is insufficient to establish conspiracy.</p>
+          </div>
 
-      <p>The court held that the evidence was insufficient to establish the existence of a conspiracy, emphasizing the necessity of proving both an agreement and an overt act. It reasoned that mere association or preparatory conduct does not meet the statutory requirements under Virginia law. This ruling reinforces the burden on the prosecution to demonstrate clear coordination and action toward the criminal objective, providing a vital precedent for defendants facing conspiracy charges in Virginia by underscoring the protections against convictions based solely on suspicion or incomplete evidence.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Conspiracy requires proof of an actual agreement — not merely association or parallel conduct. D.J. Rivera challenges conspiracy charges by scrutinizing the evidence of an agreement, distinguishing between defendants who acted independently and defendants who actually agreed to commit a crime together.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Conspiracy Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/conspiracy" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Conspiracy Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-22</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/conspiracy" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Conspiracy Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/conspiracy" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Conspiracy Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Conspiracy Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

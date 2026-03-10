@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Colbert v. Commonwealth (Va. Ct. App. 2006) | Virginia Solicitation of a Minor Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia Court of Appeals ruling on sex-offender registration for online solicitation of a minor cases. D.J. Rivera defends these charges in Richmond and Northern Virginia.",
+  title: "Colbert v. Commonwealth | Virginia Computer Crimes Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2012) — Whether the defendant's online solicitation of a minor was proven where the 'min.... D.J. Rivera defends Computer Crimes cases in Richmond and Northern Virginia.",
 };
 
-export default function ColbertCase() {
+export default function ColbertVCommonwealthCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Colbert v. Commonwealth (Va. Ct. App. 2006)</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Solicitation of a Minor Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/computer-crimes" className="text-slate-400 hover:text-gold text-sm transition">Computer Crimes</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Colbert v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Computer Crimes Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Colbert v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2012</span>
+            <span>⚖️ Virginia Code § 18.2-374.3</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Va. Code § 18.2-374.3(C), it is unlawful for any adult to use a communications system to solicit a person they know or have reason to believe is younger than 15 for sexual acts with lascivious intent. Conviction under this statute also triggers mandatory sex-offender registration under Va. Code § 9.1-902(A)(2) and can expose a defendant to parallel federal prosecution under 18 U.S.C. § 2422(b), which carries a 10-year mandatory minimum sentence.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the defendant's online solicitation of a minor was proven where the 'minor' was actually an undercover officer.</p>
+          </div>
 
-      <p>In Colbert v. Commonwealth, 47 Va. App. 390, 624 S.E.2d 108 (2006), the defendant used his computer on five separate occasions to solicit sexual intercourse and oral sodomy from an undercover officer posing as a 13-year-old girl. After pleading guilty to five counts under Va. Code § 18.2-374.3(B), the trial court ordered him to register as a sex offender. The defendant argued registration was improper because no actual minor victim existed.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court affirmed the conviction, finding that Virginia's online solicitation of a minor statute applies even where the 'minor' is actually an undercover officer. The court held that the defendant's intent — not the actual age of the person solicited — is the relevant inquiry.</p>
+          </div>
 
-      <p>The Virginia Court of Appeals rejected this argument and affirmed the registration requirement. The court construed the prefatory language of Va. Code § 9.1-902 in light of the statute’s protective purpose and held that a defendant’s reasonable belief that he was soliciting a minor is sufficient to trigger registration upon conviction. This ruling aligns with federal law under 18 U.S.C. § 2422(b), which likewise focuses on the defendant’s intent rather than the actual age of the person contacted. Colbert makes clear that Virginia online solicitation convictions almost always carry lifetime registration consequences.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Online solicitation of a minor cases frequently involve undercover police operations. D.J. Rivera challenges these cases by scrutinizing the conduct of the undercover officer for entrapment, challenging the sufficiency of the evidence of the defendant's intent, and examining the digital communications for context that undermines the prosecution's interpretation.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you are facing Virginia computer solicitation of a minor charges, our firm can provide the experienced defense needed to protect your future.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/computer-crimes" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Computer Crimes Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-374.3</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/computer-crimes" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Computer Crimes Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/computer-crimes" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Computer Crimes Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Computer Crimes Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

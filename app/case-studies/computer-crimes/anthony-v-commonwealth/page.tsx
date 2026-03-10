@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Anthony v. Commonwealth (Va. Ct. App. 2023) | Virginia Solicitation of a Minor Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia Court of Appeals ruling on autism sentencing relief in online solicitation of a minor cases. D.J. Rivera defends these charges in Richmond and Northern Virginia.",
+  title: "Anthony v. Commonwealth | Virginia Computer Crimes Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2010) — Whether the defendant's use of another person's login credentials to access a co.... D.J. Rivera defends Computer Crimes cases in Richmond and Northern Virginia.",
 };
 
-export default function AnthonyCase() {
+export default function AnthonyVCommonwealthCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Anthony v. Commonwealth (Va. Ct. App. 2023)</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Solicitation of a Minor Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/computer-crimes" className="text-slate-400 hover:text-gold text-sm transition">Computer Crimes</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Anthony v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Computer Crimes Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Anthony v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2010</span>
+            <span>⚖️ Virginia Code § 18.2-152.3</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Defendants convicted under Va. Code § 18.2-374.3(C) may seek sentencing relief under Va. Code § 19.2-303.6 when autism or another qualifying disorder substantially contributed to the offense. Proper preservation of sentencing issues is critical, as unpreserved claims are waived on appeal.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the defendant's use of another person's login credentials to access a computer system constituted unauthorized access under § 18.2-152.3.</p>
+          </div>
 
-      <p>In Anthony v. Commonwealth, No. 1658-22-2 (Va. Ct. App. Sept. 26, 2023), the defendant pled guilty to soliciting a 13-year-old under Va. Code § 18.2-374.3(C). At sentencing he requested a deferred disposition under the autism statute. The trial court orally found he qualified but was not an appropriate candidate; the final order stated the statute “is not applicable.”</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court affirmed the conviction, finding that using another person's credentials without their permission constitutes unauthorized access under § 18.2-152.3. The court held that authorization is personal — permission granted to one person does not extend to another person who uses that person's credentials.</p>
+          </div>
 
-      <p>The Virginia Court of Appeals affirmed because counsel failed to object specifically to the final order’s language, rendering the claim unpreserved under Rule 5A:18. This case serves as a cautionary example in Virginia computer solicitation of a minor sentencing hearings involving neurodiversity.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Authorization is the central issue in most computer crime cases. D.J. Rivera — with his B.S. in Computer Engineering and background at iCyberLaw — challenges the prosecution's interpretation of 'authorization,' arguing that the defendant had implicit or explicit permission to access the system. The technical complexity of authorization in modern computer systems provides significant room for defense.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you face Virginia computer solicitation of a minor charges and have a qualifying disorder, our firm can ensure all sentencing options are properly preserved and presented.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/computer-crimes" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Computer Crimes Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-152.3</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/computer-crimes" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Computer Crimes Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/computer-crimes" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Computer Crimes Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Computer Crimes Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

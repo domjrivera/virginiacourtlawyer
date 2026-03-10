@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Johnson v. Com. | Virginia Burglary Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia burglary conviction upheld for unlawful nighttime entry with intent to commit larceny.",
+  title: "Johnson v. Commonwealth | Virginia Burglary Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2012) — Whether the defendant's presence at the scene was sufficient to establish guilt.... D.J. Rivera defends Burglary cases in Richmond and Northern Virginia.",
 };
 
 export default function JohnsonVComCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Johnson v. Com.</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Burglary Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/burglary" className="text-slate-400 hover:text-gold text-sm transition">Burglary</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Johnson v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Burglary Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Johnson v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2012</span>
+            <span>⚖️ Virginia Code § 18.2-89</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-89, burglary is defined as breaking and entering the dwelling house of another at night with intent to commit a felony or larceny therein. The statute requires proof of unlawful entry and specific intent to commit a crime inside the premises. This offense is considered a felony and carries significant penalties. Virginia’s burglary laws align with federal statutes that similarly criminalize unauthorized entry with criminal intent, emphasizing protection of individuals’ homes and property.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the defendant's presence at the scene was sufficient to establish guilt as a principal in the second degree to burglary.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with burglary after being found inside a residence without permission during nighttime hours. The prosecution alleged that the defendant intended to steal valuables from the home. The defendant argued that entry was lawful as he believed he had permission to be on the property and denied any intent to commit a crime. The facts centered on whether the entry was unauthorized and if the requisite criminal intent was present at the time of entry.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court reversed the conviction, finding that mere presence at the scene of a burglary — without more — is insufficient to establish guilt as a principal in the second degree. The court held that the prosecution must prove that the defendant actively assisted, encouraged, or facilitated the burglary.</p>
+          </div>
 
-      <p>The court held that the prosecution met its burden by proving beyond a reasonable doubt that the defendant entered unlawfully and with intent to commit larceny. The ruling emphasized the importance of intent and the timing of entry in burglary cases. This decision reinforces the necessity for defense attorneys to challenge both the element of unauthorized entry and the defendant’s intent. It serves as a critical precedent for defending clients accused of burglary under Virginia law by scrutinizing the circumstances surrounding the entry and the defendant’s state of mind.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Presence at the scene of a crime is not the same as participation in the crime. D.J. Rivera challenges aiding and abetting theories in burglary cases by scrutinizing the evidence of the defendant's active participation — distinguishing between mere presence and actual assistance.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Burglary Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/burglary" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Burglary Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-89</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/burglary" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Burglary Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/burglary" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Burglary Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Burglary Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

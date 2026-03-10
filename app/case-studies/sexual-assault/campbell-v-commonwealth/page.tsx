@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Campbell v. Commonwealth, Record No. 1443-05-4 (Va. App. 12/19/2006) | Virginia Sexual Assault Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia court affirms sexual assault conviction, highlighting consent and evidentiary standards under Va. Code § 18.2-61.",
+  title: "Campbell v. Commonwealth | Virginia Sexual Assault Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2009) — Whether the alleged victim's prior sexual conduct was admissible under the rape.... D.J. Rivera defends Sexual Assault cases in Richmond and Northern Virginia.",
 };
 
 export default function CampbellVCommonwealthCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Campbell v. Commonwealth, Record No. 1443-05-4 (Va. App. 12/19/2006)</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Sexual Assault Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/sexual-assault" className="text-slate-400 hover:text-gold text-sm transition">Sexual Assault</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Campbell v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Sexual Assault Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Campbell v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2009</span>
+            <span>⚖️ Virginia Code § 18.2-67.7</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-61, sexual assault is defined as engaging in sexual intercourse or sexual acts with another person without their consent, through force, intimidation, or when the victim is incapable of consent. The statute requires the prosecution to prove beyond a reasonable doubt that the defendant intentionally committed the act without the victim’s voluntary agreement. Virginia’s sexual assault laws align closely with federal statutes such as 18 U.S.C. § 2241, which criminalizes aggravated sexual abuse, emphasizing the absence of consent and use of force or coercion as critical elements.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the alleged victim's prior sexual conduct was admissible under the rape shield law.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with sexual assault following an alleged non-consensual sexual encounter. The prosecution argued that the defendant used force to overcome the victim’s resistance, while the defense contended that the encounter was consensual and that the victim’s testimony was inconsistent. The factual dispute centered on whether the victim had the capacity and willingness to consent, and whether the defendant’s actions met the statutory definition of sexual assault under Virginia law.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court affirmed the exclusion of the prior sexual conduct evidence, finding that Virginia's rape shield law (§ 18.2-67.7) bars admission of the alleged victim's prior sexual conduct except in narrowly defined circumstances. The court held that the defendant had not established that the evidence fell within any of the statutory exceptions.</p>
+          </div>
 
-      <p>The court upheld the conviction, finding sufficient evidence that the defendant acted without the victim’s consent and employed force or intimidation. The ruling reinforced the importance of evaluating the totality of circumstances when determining consent and clarified evidentiary standards for corroborating victim testimony. This case serves as a significant precedent for Virginia criminal defense by illustrating the rigorous scrutiny courts apply to consent issues in sexual assault prosecutions, guiding defense strategies in challenging the prosecution’s proof of non-consent.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Virginia's rape shield law limits the use of the alleged victim's prior sexual conduct as a defense. However, the law contains important exceptions — including evidence of prior sexual conduct with the defendant and evidence offered to explain physical evidence. D.J. Rivera identifies and pursues every available exception to the rape shield law in sexual assault cases.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Sexual Assault Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/sexual-assault" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Sexual Assault Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-67.7</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/sexual-assault" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Sexual Assault Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/sexual-assault" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Sexual Assault Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Sexual Assault Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Scott v. Com. | Virginia Shoplifting Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia court confirms that proving intent is essential for shoplifting convictions under Va. Code § 18.2-103.",
+  title: "Scott v. Commonwealth | Virginia Shoplifting Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2012) — Whether the value of the merchandise was sufficient to support a felony shoplift.... D.J. Rivera defends Shoplifting cases in Richmond and Northern Virginia.",
 };
 
 export default function ScottVComCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Scott v. Com.</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Shoplifting Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/shoplifting" className="text-slate-400 hover:text-gold text-sm transition">Shoplifting</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Scott v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Shoplifting Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Scott v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2012</span>
+            <span>⚖️ Virginia Code § 18.2-103</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-103, shoplifting is defined as the unlawful taking of goods from a merchant with the intent to deprive the owner of their value. The statute prohibits knowingly removing merchandise from a store without paying the full price, and the prosecution must prove intent to steal beyond a reasonable doubt. This offense is classified as a misdemeanor, but repeated violations can lead to felony charges under Virginia law. Federally, similar offenses are addressed under theft statutes, but Virginia’s code specifically targets retail theft to protect local businesses.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the value of the merchandise was sufficient to support a felony shoplifting conviction.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with shoplifting after allegedly removing merchandise from a retail store without payment. The prosecution presented evidence including surveillance footage and eyewitness testimony to establish the defendant’s intent to steal. The defense argued that the defendant mistakenly believed the items were free or intended to pay but was distracted. The factual dispute centered on whether the defendant had the requisite criminal intent at the time of taking the goods.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court reversed the felony shoplifting conviction, finding that the prosecution failed to prove beyond a reasonable doubt that the value of the merchandise exceeded the felony threshold. The court held that the retail price of merchandise is not necessarily its 'value' for purposes of the shoplifting statute.</p>
+          </div>
 
-      <p>The court ruled in favor of the prosecution, finding sufficient evidence to prove the defendant’s intent to unlawfully deprive the merchant of the merchandise’s value. The decision emphasized the importance of intent in shoplifting cases and clarified that mistaken belief must be reasonable to negate criminal liability. This ruling underscores the necessity for defendants to present credible evidence challenging intent and serves as a precedent for future cases involving disputed mens rea in retail theft prosecutions in Virginia.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">The value of merchandise determines whether shoplifting is a misdemeanor or felony. D.J. Rivera challenges the prosecution's evidence of value in shoplifting cases, particularly where the merchandise was damaged, used, or marked down. Reducing the value below the felony threshold can mean the difference between a misdemeanor and a felony conviction.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Shoplifting Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/shoplifting" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Shoplifting Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-103</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/shoplifting" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Shoplifting Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/shoplifting" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Shoplifting Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Shoplifting Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Stewart v. Com. | Virginia Conspiracy Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia courts require proof of agreement and overt act for conspiracy convictions, protecting defendants from mere association charges.",
+  title: "Stewart v. Commonwealth | Virginia Conspiracy Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2016) — Whether the overt act required for conspiracy was proven beyond a reasonable dou.... D.J. Rivera defends Conspiracy cases in Richmond and Northern Virginia.",
 };
 
 export default function StewartVComCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Stewart v. Com.</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Conspiracy Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/conspiracy" className="text-slate-400 hover:text-gold text-sm transition">Conspiracy</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Stewart v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Conspiracy Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Stewart v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2016</span>
+            <span>⚖️ Virginia Code § 18.2-22</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia law, conspiracy is governed by Virginia Code § 18.2-22, which prohibits an agreement between two or more persons to commit a criminal act or to accomplish a lawful act by unlawful means. The statute requires proof of an intent to agree and an overt act in furtherance of the conspiracy. This framework aligns with federal conspiracy statutes, such as 18 U.S.C. § 371, emphasizing the agreement and overt act elements as essential to establishing criminal liability. Understanding these elements is crucial for defendants, as mere association or knowledge without agreement does not constitute conspiracy under Virginia law.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the overt act required for conspiracy was proven beyond a reasonable doubt.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with conspiracy to commit a felony based on alleged communications and coordinated actions with co-conspirators. The prosecution argued that the defendant knowingly entered into an agreement to engage in illegal conduct and took steps to further the plan. Conversely, the defense contended that the defendant neither agreed to the criminal objective nor participated in any overt act, asserting that the evidence showed only innocent association and uncoordinated behavior. The factual dispute centered on whether the defendant’s conduct met the threshold for conspiracy liability under the statute.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court reversed the conspiracy conviction, finding that the prosecution failed to prove beyond a reasonable doubt that any overt act in furtherance of the conspiracy had been committed. The court held that Virginia conspiracy requires proof of at least one overt act in furtherance of the agreement, and that mere agreement without an overt act is insufficient.</p>
+          </div>
 
-      <p>The court held that the evidence was insufficient to prove the defendant’s agreement to the conspiracy beyond a reasonable doubt, emphasizing that mere presence or association does not satisfy the agreement element required by Virginia Code § 18.2-22. This ruling underscores the necessity for prosecutors to establish clear proof of both an agreement and an overt act, protecting defendants from convictions based solely on circumstantial or ambiguous conduct. The decision serves as a significant precedent reinforcing the stringent requirements for conspiracy charges in Virginia, providing a critical defense framework for individuals facing similar allegations.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Virginia conspiracy requires proof of an overt act in furtherance of the agreement. D.J. Rivera challenges the sufficiency of the alleged overt act in conspiracy cases — scrutinizing whether the act was actually committed, whether it was in furtherance of the alleged agreement, and whether it was committed by a member of the alleged conspiracy.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Conspiracy Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/conspiracy" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Conspiracy Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-22</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/conspiracy" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Conspiracy Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/conspiracy" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Conspiracy Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Conspiracy Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

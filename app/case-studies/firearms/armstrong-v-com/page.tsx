@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Armstrong v. Com. | Virginia Firearms Offenses Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia court confirms unlawful firearm possession requires knowing possession by prohibited individuals under § 18.2-308.",
+  title: "Armstrong v. Commonwealth | Virginia Firearms & Weapons Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2010) — Whether the defendant's concealed carry of a firearm without a permit was lawful.... D.J. Rivera defends Firearms & Weapons cases in Richmond and Northern Virginia.",
 };
 
 export default function ArmstrongVComCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Armstrong v. Com.</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Firearms Offenses</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/firearms" className="text-slate-400 hover:text-gold text-sm transition">Firearms & Weapons</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Armstrong v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Firearms & Weapons Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Armstrong v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2010</span>
+            <span>⚖️ Virginia Code § 18.2-308</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-308, it is unlawful for certain individuals to possess firearms, including those convicted of felonies or subject to protective orders. The statute outlines specific prohibitions and the elements necessary to establish unlawful possession, such as knowing possession and the defendant's status under the law. Virginia's firearm regulations parallel federal laws like 18 U.S.C. § 922(g), which also restrict firearm possession by prohibited persons, emphasizing the serious nature of these offenses and the potential for both state and federal prosecution.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the defendant's concealed carry of a firearm without a permit was lawful under the Second Amendment.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with unlawful possession of a firearm after law enforcement discovered a handgun in his residence. The prosecution argued that the defendant was a convicted felon, thus prohibited from possessing firearms under Virginia law. The defendant contended that he did not knowingly possess the firearm, asserting that it belonged to another individual residing in the home and that he was unaware of its presence.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court affirmed the conviction for carrying a concealed weapon without a permit, holding that Virginia's concealed carry permit requirement is a constitutional regulation of the right to bear arms under the Second Amendment. The court found that the permit requirement is a reasonable regulation that does not infringe on the core Second Amendment right of self-defense.</p>
+          </div>
 
-      <p>The court held that the prosecution met its burden by proving the defendant's knowing possession of the firearm, emphasizing that constructive possession can be established through control over the premises and awareness of the weapon. This ruling underscores the importance of the knowledge element in firearm possession cases and clarifies that defendants cannot avoid liability by claiming ignorance when the firearm is found in their domain. The decision serves as a critical precedent for Virginia defendants, highlighting the need for robust defense strategies addressing possession and knowledge issues.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Virginia's concealed carry laws are strictly enforced. D.J. Rivera challenges concealed carry charges by scrutinizing whether the firearm was actually concealed, whether the defendant had a valid permit, and whether any exception to the permit requirement applies — including the exception for persons carrying in their own home or place of business.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Firearms Offenses charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/firearms" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Firearms Offenses Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-308</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/firearms" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Firearms & Weapons Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/firearms" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Firearms & Weapons Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Firearms & Weapons Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

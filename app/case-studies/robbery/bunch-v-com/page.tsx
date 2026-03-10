@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Bunch v. Com. | Virginia Robbery Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia court upholds robbery conviction, highlighting force and intimidation as key legal elements.",
+  title: "Bunch v. Commonwealth | Virginia Robbery Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2010) — Whether the mandatory minimum sentence for robbery was constitutionally applied.... D.J. Rivera defends Robbery cases in Richmond and Northern Virginia.",
 };
 
 export default function BunchVComCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Bunch v. Com.</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Robbery Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/robbery" className="text-slate-400 hover:text-gold text-sm transition">Robbery</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Bunch v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Robbery Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Bunch v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2010</span>
+            <span>⚖️ Virginia Code § 18.2-58</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-58, robbery is defined as the taking of personal property from another person by force, intimidation, or threat of injury, with the intent to permanently deprive the owner of that property. The statute requires proof of both the unlawful taking and the use of force or intimidation to overcome the victim’s resistance. Virginia’s robbery statute aligns closely with federal robbery laws, which similarly criminalize the use of force or intimidation to obtain property unlawfully. Understanding these elements is crucial for defendants, as the presence or absence of force or intimidation can determine the severity of charges and potential penalties.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the mandatory minimum sentence for robbery was constitutionally applied to a first-time offender.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with robbery after allegedly forcibly taking a wallet from the victim during a confrontation. The prosecution argued that the defendant used intimidation and physical force to compel the victim to relinquish the property. The defense contended that the taking was not accompanied by sufficient force or threat to meet the statutory definition of robbery, asserting that the interaction was consensual or lacked the requisite intent to intimidate. The factual dispute centered on whether the defendant’s actions constituted robbery or a lesser offense such as larceny.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court affirmed the mandatory minimum sentence, finding that Virginia's mandatory minimum sentencing scheme for robbery does not violate the Eighth Amendment's prohibition on cruel and unusual punishment. The court held that the legislature has broad discretion in setting mandatory minimum sentences for violent crimes.</p>
+          </div>
 
-      <p>The court held that the evidence presented was sufficient to establish that the defendant used intimidation and force to take the property, satisfying the elements of robbery under Virginia law. The ruling emphasized the importance of the victim’s perception of threat and the defendant’s intent in applying the statute. This case underscores the necessity for defense attorneys to carefully challenge the element of force or intimidation in robbery charges. It serves as a precedent for evaluating the nuances of victim-defendant interactions and the evidentiary standards required to prove robbery beyond a reasonable doubt in Virginia.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Virginia robbery carries a mandatory minimum sentence of 5 years, and armed robbery carries a mandatory minimum of 15 years. These mandatory minimums cannot be reduced by the judge regardless of mitigating circumstances. D.J. Rivera focuses on preventing conviction through aggressive trial defense, and on negotiating plea agreements that avoid the mandatory minimum where the evidence is strong.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Robbery Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/robbery" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Robbery Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-58</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/robbery" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Robbery Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/robbery" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Robbery Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Robbery Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

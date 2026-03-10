@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Guerrant v. Commonwealth | Virginia Firearms Offenses Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia court affirms unlawful firearm possession conviction, clarifying possession standards under Va. Code § 18.2-308.",
+  title: "Guerrant v. Commonwealth | Virginia Firearms & Weapons Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2012) — Whether the firearm was used 'in the commission of a felony' for purposes of the.... D.J. Rivera defends Firearms & Weapons cases in Richmond and Northern Virginia.",
 };
 
 export default function GuerrantVCommonwealthCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Guerrant v. Commonwealth</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Firearms Offenses</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/firearms" className="text-slate-400 hover:text-gold text-sm transition">Firearms & Weapons</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Guerrant v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Firearms & Weapons Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Guerrant v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2012</span>
+            <span>⚖️ Virginia Code § 18.2-53.1</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-308, it is unlawful for certain individuals to possess firearms, including those convicted of felonies or subject to specific restraining orders. The statute outlines the elements of unlawful possession, requiring proof that the defendant knowingly possessed a firearm while prohibited by law. This state law aligns with federal statutes such as 18 U.S.C. § 922(g), which similarly restrict firearm possession by convicted felons and other disqualified persons. Understanding these provisions is crucial for defendants facing firearms charges in Virginia, as violations carry significant criminal penalties.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the firearm was used 'in the commission of a felony' for purposes of the § 18.2-53.1 enhancement.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with unlawful possession of a firearm after authorities discovered a handgun in his possession despite a prior felony conviction. The prosecution argued that the defendant knowingly possessed the firearm in violation of Virginia law. The defense contended that the defendant did not have actual possession or knowledge of the firearm, challenging the sufficiency of the evidence supporting the possession element. The factual dispute centered on whether the defendant exercised control or awareness over the firearm found.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court reversed the § 18.2-53.1 enhancement, finding that the firearm was not used 'in the commission of' the underlying felony because it was not displayed, brandished, or employed in any way during the commission of the offense. The court held that mere possession of a firearm during a felony is insufficient to trigger the enhancement.</p>
+          </div>
 
-      <p>The court held that the evidence was sufficient to establish the defendant's knowing possession of the firearm, affirming the conviction under Virginia Code § 18.2-308. The ruling emphasized that constructive possession, where the defendant has dominion and control over the firearm even if not physically holding it, satisfies the possession element. This decision reinforces the broad interpretation of possession in Virginia firearms cases, underscoring the importance for defendants to challenge both actual and constructive possession claims. The case serves as a critical precedent for defense strategies in unlawful firearm possession prosecutions.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">The § 18.2-53.1 firearm enhancement adds a mandatory minimum consecutive sentence of three years to any felony conviction. This case establishes that the firearm must actually be used — not merely possessed — during the commission of the felony. D.J. Rivera challenges firearm enhancements by scrutinizing the evidence of how the firearm was used during the alleged offense.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Firearms Offenses charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/firearms" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Firearms Offenses Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-53.1</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/firearms" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Firearms & Weapons Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/firearms" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Firearms & Weapons Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Firearms & Weapons Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

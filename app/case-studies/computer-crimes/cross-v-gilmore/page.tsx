@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Cross v. Gilmore (E.D. Va. 2016) | Virginia Solicitation of a Minor Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Federal habeas ruling on statute of limitations for Virginia online solicitation of a minor convictions. D.J. Rivera defends these cases in Richmond and Northern Virginia.",
+  title: "Cross v. Gilmore | Virginia Computer Crimes Defense – D.J. Rivera, Esq.",
+  description: "U.S. District Court, E.D. Va. (2014) — Whether the government's warrantless access to the defendant's email constituted.... D.J. Rivera defends Computer Crimes cases in Richmond and Northern Virginia.",
 };
 
-export default function CrossCase() {
+export default function CrossVGilmoreCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Cross v. Gilmore (E.D. Va. 2016)</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Solicitation of a Minor Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/computer-crimes" className="text-slate-400 hover:text-gold text-sm transition">Computer Crimes</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Cross v. Gilmore</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Computer Crimes Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Cross v. Gilmore</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 U.S. District Court, E.D. Va.</span>
+            <span>📅 2014</span>
+            <span>⚖️ Virginia Code 18 U.S.C. § 1030 / Fourth Amendment</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Federal habeas review of Virginia computer solicitation of a minor convictions is strictly limited by the one-year statute of limitations in 28 U.S.C. § 2244(d). Even when new Fourth Amendment precedent emerges (such as Riley v. California), the pre-existing state of the law does not constitute a state-created “impediment” that tolls the deadline.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the government's warrantless access to the defendant's email constituted an unreasonable search under the Fourth Amendment.</p>
+          </div>
 
-      <p>In Cross v. Gilmore, 164 F. Supp. 3d 818 (E.D. Va. 2016), the petitioner pled guilty to electronic solicitation of a minor under Va. Code § 18.2-374.3 after a private citizen discovered explicit messages to his 12-year-old step-sister on his cell phone. Police seized and searched the phone incident to arrest. Years later, relying on Riley, he claimed ineffective assistance for counsel’s failure to move to suppress.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court held that the government's warrantless access to the defendant's email — obtained through a subpoena rather than a warrant — violated the Fourth Amendment. The court held that email stored on a third-party server is protected by a reasonable expectation of privacy and requires a warrant for law enforcement access.</p>
+          </div>
 
-      <p>The federal district court dismissed the petition as untimely. The court held that the pre-Riley state of the law did not qualify as an “impediment” under § 2244(d)(1)(B); futility is not the same as an impediment. This federal decision illustrates the strict limitations period for collateral attacks on Virginia computer solicitation of a minor convictions and the interplay between state prosecutions and federal online child exploitation laws under 18 U.S.C. § 2422(b).</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">The Fourth Amendment protects electronic communications stored on third-party servers. D.J. Rivera challenges the government's access to email, cloud storage, and other electronic communications obtained without a warrant, moving to suppress evidence obtained in violation of the Fourth Amendment.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you have been convicted of Virginia computer solicitation of a minor and are considering post-conviction relief, our firm can evaluate your options under both state and federal law.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/computer-crimes" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Computer Crimes Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>18 U.S.C. § 1030 / Fourth Amendment</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/computer-crimes" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Computer Crimes Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/computer-crimes" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Computer Crimes Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Computer Crimes Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

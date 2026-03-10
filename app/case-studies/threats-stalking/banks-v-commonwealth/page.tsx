@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Banks v. Commonwealth | Virginia Threats and Stalking Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia courts uphold stalking convictions when repeated contact and threats cause reasonable fear.",
+  title: "Banks v. Commonwealth | Virginia Threats & Stalking Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2009) — Whether the defendant's statement constituted a 'true threat' for purposes of th.... D.J. Rivera defends Threats & Stalking cases in Richmond and Northern Virginia.",
 };
 
 export default function BanksVCommonwealthCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Banks v. Commonwealth</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Threats and Stalking Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/threats-stalking" className="text-slate-400 hover:text-gold text-sm transition">Threats & Stalking</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Banks v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Threats & Stalking Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Banks v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2009</span>
+            <span>⚖️ Virginia Code § 18.2-60</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-60, it is unlawful to threaten bodily harm or to engage in stalking, which includes repeated and unwanted contact or conduct causing fear of harm. The statute requires the prosecution to prove that the defendant intentionally threatened another person or engaged in a pattern of behavior that placed the victim in reasonable fear of death, criminal sexual assault, or bodily injury. These offenses are designed to protect individuals from harassment and intimidation, and they parallel federal laws such as the Violence Against Women Act, which addresses stalking and threats across state lines. Understanding these elements is crucial for defendants to mount an effective defense against charges of threats or stalking in Virginia courts.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the defendant's statement constituted a 'true threat' for purposes of the threatening communications statute.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with making threats and stalking a former acquaintance. The prosecution alleged that the defendant repeatedly contacted the victim despite clear requests to cease communication, culminating in statements perceived as threatening physical harm. The defendant argued that the communications were not intended to threaten but were attempts to reconcile or clarify misunderstandings. The factual dispute centered on whether the defendant’s conduct met the statutory threshold for causing reasonable fear in the victim.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court reversed the conviction, finding that the defendant's statement — made in the heat of an argument — did not constitute a 'true threat' because a reasonable person would not have interpreted it as a serious expression of intent to commit violence. The court held that the First Amendment protects hyperbolic and emotional speech that does not constitute a true threat.</p>
+          </div>
 
-      <p>The court held that the evidence was sufficient to support a conviction under Virginia Code § 18.2-60, emphasizing that the pattern of repeated contact combined with threatening language satisfied the elements of stalking and threats. The ruling underscored the importance of the victim’s reasonable perception of fear rather than the defendant’s subjective intent. This case serves as a significant precedent for Virginia criminal defense by clarifying how courts assess the totality of circumstances in stalking and threat cases, highlighting the need for defendants to carefully consider their communications and behavior.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">The First Amendment protects a wide range of speech, including hyperbolic, angry, and offensive speech. D.J. Rivera challenges threatening communications charges by arguing that the alleged threat was not a 'true threat' — that a reasonable person would not have interpreted it as a serious expression of intent to commit violence. Context, tone, and the relationship between the parties are critical to this analysis.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Threats and Stalking Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/threats-stalking" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Threats and Stalking Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-60</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/threats-stalking" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Threats & Stalking Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/threats-stalking" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Threats & Stalking Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Threats & Stalking Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

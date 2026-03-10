@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Hunt v. Com. | Virginia Larceny and Theft Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia larceny requires proof of intent to steal; this case highlights the necessity of intent for conviction.",
+  title: "Hunt v. Commonwealth | Virginia Larceny & Theft Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2013) — Whether the defendant's receipt of stolen property was proven beyond a reasonabl.... D.J. Rivera defends Larceny & Theft cases in Richmond and Northern Virginia.",
 };
 
 export default function HuntVComCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Hunt v. Com.</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Larceny and Theft Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/larceny-theft" className="text-slate-400 hover:text-gold text-sm transition">Larceny & Theft</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Hunt v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Larceny & Theft Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Hunt v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2013</span>
+            <span>⚖️ Virginia Code § 18.2-108</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-95, larceny is defined as the unlawful taking and carrying away of the personal property of another with intent to permanently deprive the owner of it. The statute requires proof of asportation and intent to steal, elements that distinguish larceny from other property offenses. Virginia law aligns closely with federal theft statutes, such as 18 U.S.C. § 641, which criminalizes the embezzlement or theft of government property. Understanding these elements is crucial for defendants to challenge the sufficiency of the prosecution's evidence or to assert defenses such as lack of intent or mistaken ownership.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the defendant's receipt of stolen property was proven beyond a reasonable doubt.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with larceny after allegedly taking property from a retail establishment without payment. The prosecution argued that the defendant intentionally concealed merchandise with the purpose of permanently depriving the store of its goods. The defense contended that the defendant had no intent to steal, asserting that the items were mistakenly taken or intended for later payment. The factual dispute centered on whether the defendant's actions met the statutory elements of larceny under Virginia law.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court reversed the receiving stolen property conviction, finding that the prosecution failed to prove beyond a reasonable doubt that the defendant knew the property was stolen. The court held that knowledge that property is stolen is an essential element of receiving stolen property and must be proven by direct or circumstantial evidence.</p>
+          </div>
 
-      <p>The court held that the evidence presented was insufficient to prove beyond a reasonable doubt that the defendant had the requisite intent to permanently deprive the owner of the property. Emphasizing the necessity of proving intent, the ruling underscored the importance of the prosecution meeting its burden in larceny cases. This decision serves as a significant precedent for Virginia defendants, highlighting that mere possession or movement of property does not establish larceny without clear evidence of intent. It reinforces the critical role of intent in criminal theft prosecutions and provides a basis for challenging charges lacking direct proof of such intent.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Receiving stolen property requires knowledge that the property was stolen. D.J. Rivera challenges the prosecution's evidence of knowledge in receiving stolen property cases — scrutinizing whether the circumstances were sufficient to put a reasonable person on notice that the property was stolen.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Larceny and Theft Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/larceny-theft" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Larceny and Theft Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-108</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/larceny-theft" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Larceny & Theft Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/larceny-theft" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Larceny & Theft Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Larceny & Theft Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

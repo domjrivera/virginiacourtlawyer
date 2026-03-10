@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Walshaw v. Com. | Virginia Homicide Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia court upholds second-degree murder conviction, emphasizing intent without premeditation in homicide cases.",
+  title: "Walshaw v. Commonwealth | Virginia Homicide & Murder Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2013) — Whether the heat of passion defense reduced the charge from murder to voluntary.... D.J. Rivera defends Homicide & Murder cases in Richmond and Northern Virginia.",
 };
 
 export default function WalshawVComCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Walshaw v. Com.</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Homicide Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/homicide" className="text-slate-400 hover:text-gold text-sm transition">Homicide & Murder</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Walshaw v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Homicide & Murder Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Walshaw v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2013</span>
+            <span>⚖️ Virginia Code § 18.2-35</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-32, homicide offenses encompass unlawful killing of another person, with distinctions between first-degree murder, second-degree murder, and voluntary or involuntary manslaughter. First-degree murder requires proof of willful, deliberate, and premeditated killing, while second-degree murder involves intentional killing without premeditation. Manslaughter charges arise when the killing occurs in the heat of passion or due to criminal negligence. These statutes align with federal homicide laws, which similarly categorize unlawful killings based on intent and circumstances, providing a framework for prosecuting and defending homicide cases in Virginia.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the heat of passion defense reduced the charge from murder to voluntary manslaughter.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with second-degree murder following an altercation resulting in the death of the victim. The prosecution argued that the defendant intentionally caused the victim's death without premeditation, relying on eyewitness testimony and forensic evidence. The defense contended that the killing was accidental and occurred during a sudden quarrel, asserting that the defendant lacked the intent necessary for murder and should instead face a lesser manslaughter charge. The factual dispute centered on the defendant's state of mind and the circumstances leading to the fatal incident.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court reduced the conviction from second-degree murder to voluntary manslaughter, finding that the evidence supported the heat of passion defense. The court held that where a defendant kills in the heat of passion provoked by adequate provocation, and without time to cool, the killing is voluntary manslaughter rather than murder.</p>
+          </div>
 
-      <p>The court held that the evidence supported a conviction for second-degree murder, emphasizing the defendant's intentional act despite the absence of premeditation. The ruling clarified the application of intent in distinguishing between murder and manslaughter under Virginia law, underscoring that deliberate action causing death suffices for second-degree murder. This decision is significant for Virginia criminal defense as it highlights the importance of challenging the prosecution's proof of intent and the nuances in homicide classifications, guiding defense strategies in similar cases involving disputed intent and circumstances.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">The heat of passion defense can reduce a murder charge to voluntary manslaughter — reducing the maximum sentence from 40 years to 10 years. D.J. Rivera develops heat of passion defenses in homicide cases where the evidence shows that the defendant acted in response to adequate provocation without time to cool. The nature of the provocation and the time between provocation and killing are critical factual issues.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Homicide Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/homicide" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Homicide Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-35</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/homicide" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Homicide & Murder Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/homicide" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Homicide & Murder Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Homicide & Murder Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

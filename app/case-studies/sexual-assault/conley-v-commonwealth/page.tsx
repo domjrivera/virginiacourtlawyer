@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Conley v. Commonwealth | Virginia Sexual Assault Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia sexual assault case underscores the importance of clear consent and evidentiary standards in defense.",
+  title: "Conley v. Commonwealth | Virginia Sexual Assault Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2011) — Whether the DNA evidence was properly admitted and whether it was sufficient to.... D.J. Rivera defends Sexual Assault cases in Richmond and Northern Virginia.",
 };
 
 export default function ConleyVCommonwealthCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Conley v. Commonwealth</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Sexual Assault Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/sexual-assault" className="text-slate-400 hover:text-gold text-sm transition">Sexual Assault</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Conley v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Sexual Assault Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Conley v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2011</span>
+            <span>⚖️ Virginia Code § 18.2-61</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-61, sexual assault is defined as sexual intercourse or sexual penetration against the will of the victim or with a victim incapable of consent. The statute criminalizes acts committed through force, threat, or when the victim is incapacitated. To secure a conviction, the Commonwealth must prove beyond a reasonable doubt that the defendant engaged in sexual acts without consent. Virginia’s sexual assault laws parallel federal statutes such as 18 U.S.C. § 2241, which also criminalize non-consensual sexual acts, emphasizing the protection of bodily autonomy and consent.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the DNA evidence was properly admitted and whether it was sufficient to identify the defendant as the perpetrator.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with sexual assault after an alleged non-consensual encounter. The prosecution presented evidence that the victim did not consent to the sexual act and that the defendant used force or intimidation. The defense argued that the encounter was consensual and challenged the credibility of the victim’s testimony. The factual dispute centered on the presence or absence of consent and whether the defendant’s actions met the statutory definition of sexual assault under Virginia law.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court affirmed the conviction, finding that the DNA evidence was properly admitted and that the statistical probability of a random match — one in several billion — was sufficient to identify the defendant as the source of the DNA. The court held that DNA evidence, properly authenticated, is admissible and highly probative.</p>
+          </div>
 
-      <p>The court held that the evidence was sufficient to support a conviction, emphasizing the victim’s testimony and corroborating facts indicating lack of consent. The ruling reinforced the principle that consent must be clear and voluntary, and that the absence of consent can be established through credible witness accounts and circumstances surrounding the incident. This case is significant for Virginia criminal defense as it highlights the critical role of consent in sexual assault prosecutions and the evidentiary standards required to defend against such charges effectively.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">DNA evidence is powerful but not infallible. D.J. Rivera retains independent DNA experts to challenge the collection, preservation, and analysis of DNA evidence in sexual assault cases. Issues such as contamination, mixed DNA profiles, and statistical interpretation can significantly undermine the prosecution's DNA evidence.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Sexual Assault Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/sexual-assault" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Sexual Assault Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-61</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/sexual-assault" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Sexual Assault Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/sexual-assault" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Sexual Assault Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Sexual Assault Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

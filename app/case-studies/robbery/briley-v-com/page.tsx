@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Briley v. Com. | Virginia Robbery Defense Lawyer – D.J. Rivera, Esq.",
-  description: "This case clarifies Virginia’s robbery statute, emphasizing the need to prove force or intimidation for conviction.",
+  title: "Briley v. Commonwealth | Virginia Robbery Defense – D.J. Rivera, Esq.",
+  description: "Virginia Supreme Court (2003) — Whether the evidence was sufficient to prove the use of force or intimidation re.... D.J. Rivera defends Robbery cases in Richmond and Northern Virginia.",
 };
 
 export default function BrileyVComCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Briley v. Com.</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Robbery Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/robbery" className="text-slate-400 hover:text-gold text-sm transition">Robbery</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Briley v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Robbery Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Briley v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Supreme Court</span>
+            <span>📅 2003</span>
+            <span>⚖️ Virginia Code § 18.2-58</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-58, robbery is defined as the taking of personal property from another person by force, intimidation, or threat of bodily harm with the intent to permanently deprive the owner of that property. The statute requires proof of both the unlawful taking and the use of force or intimidation. Virginia’s robbery statute aligns closely with federal robbery laws, which similarly emphasize the use of force or threat during the commission of theft. Understanding these elements is crucial for defendants, as the presence or absence of force or intimidation can significantly affect the charges and potential penalties.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the evidence was sufficient to prove the use of force or intimidation required for robbery.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with robbery after allegedly taking property from the victim through physical force. The prosecution argued that the defendant used intimidation and bodily harm to compel the victim to surrender their belongings. The defense contended that the taking was consensual and lacked the requisite force or threat necessary to constitute robbery under Virginia law. The factual dispute centered on whether the defendant’s actions met the statutory threshold for robbery or whether the incident was a mere theft without force.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court affirmed the robbery conviction, holding that the defendant's act of snatching property from the victim's hands — combined with a threatening statement — constituted the use of force and intimidation required for robbery. The court distinguished robbery from larceny based on the use of force or intimidation in taking the property.</p>
+          </div>
 
-      <p>The court held that the evidence sufficiently demonstrated the use of force and intimidation, thereby satisfying the elements of robbery under § 18.2-58. The ruling emphasized the necessity of proving the defendant’s intent and the application of force or threat to uphold a robbery conviction. This case underscores the importance of carefully evaluating the nature of the alleged taking in Virginia robbery prosecutions and serves as a precedent for distinguishing robbery from lesser theft offenses. For defendants, it highlights the critical role of contesting the presence of force or intimidation in their defense strategy.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Robbery requires proof of force or intimidation — mere theft without force is larceny, not robbery. The distinction is critical because robbery carries dramatically higher penalties, including mandatory minimum sentences. D.J. Rivera challenges robbery charges by scrutinizing whether the alleged force or intimidation was sufficient to elevate the offense from larceny to robbery.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Robbery Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/robbery" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Robbery Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-58</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/robbery" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Robbery Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/robbery" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Robbery Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Robbery Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

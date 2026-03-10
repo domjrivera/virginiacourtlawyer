@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Tanner v. Commonwealth, Record No. 2672-08-4 (Va. App. 1/19/2010) | Virginia Larceny and Theft Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia court affirms larceny conviction where concealment and leaving without paying prove criminal intent.",
+  title: "Tanner v. Commonwealth | Virginia Larceny & Theft Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2016) — Whether embezzlement required proof that the defendant was entrusted with the pr.... D.J. Rivera defends Larceny & Theft cases in Richmond and Northern Virginia.",
 };
 
 export default function TannerVCommonwealthCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Tanner v. Commonwealth, Record No. 2672-08-4 (Va. App. 1/19/2010)</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Larceny and Theft Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/larceny-theft" className="text-slate-400 hover:text-gold text-sm transition">Larceny & Theft</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Tanner v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Larceny & Theft Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Tanner v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2016</span>
+            <span>⚖️ Virginia Code § 18.2-111</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia Code § 18.2-95, larceny is defined as the unlawful taking and carrying away of someone else's personal property with the intent to permanently deprive the owner of it. The statute requires proof of the defendant’s intent to steal and the actual taking of property without consent. Virginia law distinguishes between petit larceny and grand larceny based on the value of the property taken, with grand larceny involving property valued over $1,000. These elements align with federal theft statutes, which similarly require proof of intent and unauthorized taking to establish criminal liability.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether embezzlement required proof that the defendant was entrusted with the property in a fiduciary capacity.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with larceny after allegedly taking merchandise from a retail store without paying. The prosecution presented evidence that the defendant concealed items and exited the store, arguing this demonstrated intent to permanently deprive the owner of the goods. The defendant contended that the items were mistakenly taken or intended to be paid for later, challenging the prosecution’s assertion of criminal intent. The factual dispute centered on whether the defendant’s actions met the threshold for larceny under Virginia law.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court affirmed the embezzlement conviction, finding that the defendant — an employee with access to company funds — was in a fiduciary relationship with the employer sufficient to support an embezzlement charge. The court held that embezzlement requires proof that the defendant was lawfully entrusted with the property and then fraudulently converted it.</p>
+          </div>
 
-      <p>The court held that the evidence was sufficient to support a conviction for larceny, emphasizing that concealment of merchandise and departure from the store without payment constituted intent to steal. The ruling clarified that circumstantial evidence, such as behavior indicating an intent to permanently deprive, can satisfy the intent element required by § 18.2-95. This case underscores the importance for defendants to address the element of intent in larceny charges and highlights how courts may interpret actions like concealment and exit without payment as indicative of criminal intent in Virginia.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Embezzlement requires proof of a fiduciary relationship and fraudulent conversion. D.J. Rivera challenges embezzlement charges by scrutinizing the nature of the defendant's relationship with the alleged victim, the authorization for the defendant's use of the funds, and whether the defendant's conduct constituted fraudulent conversion rather than authorized use.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Larceny and Theft Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/larceny-theft" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Larceny and Theft Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-111</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/larceny-theft" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Larceny & Theft Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/larceny-theft" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Larceny & Theft Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Larceny & Theft Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

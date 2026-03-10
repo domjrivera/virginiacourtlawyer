@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Brooker v. Commonwealth (Va. Ct. App. 2003) | Virginia Solicitation of a Minor Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Landmark Virginia Court of Appeals case on online solicitation of a minor using webcams and live transmissions. D.J. Rivera defends these cases aggressively.",
+  title: "Brooker v. Commonwealth | Virginia Computer Crimes Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2011) — Whether the defendant's installation of spyware on the alleged victim's computer.... D.J. Rivera defends Computer Crimes cases in Richmond and Northern Virginia.",
 };
 
-export default function BrookerCase() {
+export default function BrookerVCommonwealthCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Brooker v. Commonwealth (Va. Ct. App. 2003)</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Solicitation of a Minor Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/computer-crimes" className="text-slate-400 hover:text-gold text-sm transition">Computer Crimes</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Brooker v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Computer Crimes Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Brooker v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2011</span>
+            <span>⚖️ Virginia Code § 18.2-152.5</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Virginia’s computer solicitation statute, Va. Code § 18.2-374.3, makes it unlawful for any person 18 years of age or older to use a communications system “for the purposes of soliciting, with lascivious intent, any person he knows or has reason to believe is a child younger than 15 years of age” to engage in sexual acts. This state law works in tandem with federal online child exploitation statutes, including 18 U.S.C. § 2422(b) (coercion and enticement of a minor using any facility of interstate commerce) and 18 U.S.C. § 2251 (sexual exploitation of children), which can lead to separate federal charges and mandatory minimum sentences when explicit images or live transmissions are involved.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the defendant's installation of spyware on the alleged victim's computer constituted computer invasion of privacy under § 18.2-152.5.</p>
+          </div>
 
-      <p>In Brooker v. Commonwealth, 41 Va. App. 609, 587 S.E.2d 732 (2003), the defendant participated in three distinct instant-message conversations in a “Romance Virginia” chat room with an undercover detective posing as a 12-year-old girl. He sent photographs of his exposed genitals, performed live masturbation via webcam while the minor watched, discussed performing oral sex and intercourse, provided his home telephone number, and proposed meeting the child. The Commonwealth charged him with three counts of using a communications system to solicit a minor under Va. Code § 18.2-374.3(B) and two counts of attempted indecent liberties. The defendant argued the evidence failed to prove he intended the minor to act on the solicitations.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court affirmed the conviction, finding that the defendant's installation of spyware — which recorded the alleged victim's keystrokes and captured screenshots — constituted computer invasion of privacy. The court held that § 18.2-152.5 prohibits the use of a computer to examine personal information about another person without their knowledge or consent.</p>
+          </div>
 
-      <p>The Virginia Court of Appeals affirmed all convictions. The court held that the specific intent required by the statute may be inferred from the defendant’s explicit words and conduct, and that the offense is complete upon the incitement itself — even without an actual meeting. Separate chats on different dates properly supported multiple convictions. Because the defendant also transmitted explicit images, the conduct could have triggered additional child pornography charges under Va. Code § 18.2-374.1 and 18 U.S.C. § 2252. This decision remains a cornerstone in Virginia computer solicitation of a minor prosecutions involving webcams and live transmissions.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Computer invasion of privacy cases often involve complex technical evidence about how software was installed and what data it captured. D.J. Rivera's computer engineering background allows him to challenge the prosecution's technical evidence — scrutinizing how the software was installed, what data it actually captured, and whether the defendant had authorization to install it.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia computer solicitation of a minor charges, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/computer-crimes" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Computer Crimes Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-152.5</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/computer-crimes" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Computer Crimes Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/computer-crimes" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Computer Crimes Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Computer Crimes Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

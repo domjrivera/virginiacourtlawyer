@@ -2,35 +2,74 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Garland v. Com. | Virginia Larceny and Theft Defense Lawyer – D.J. Rivera, Esq.",
-  description: "Virginia court affirms larceny conviction, emphasizing proof of intent through conduct like concealment.",
+  title: "Garland v. Commonwealth | Virginia Larceny & Theft Defense – D.J. Rivera, Esq.",
+  description: "Virginia Court of Appeals (2011) — Whether the defendant had the intent to permanently deprive the owner of the pro.... D.J. Rivera defends Larceny & Theft cases in Richmond and Northern Virginia.",
 };
 
 export default function GarlandVComCase() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif text-navy">Garland v. Com.</h1>
-        <p className="text-2xl text-crimson mt-4">Virginia Larceny and Theft Defense</p>
-      </div>
+    <div className="bg-white">
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link href="/case-studies" className="text-slate-400 hover:text-gold text-sm transition">Case Studies</Link>
+            <span className="text-slate-600">›</span>
+            <Link href="/case-studies/larceny-theft" className="text-slate-400 hover:text-gold text-sm transition">Larceny & Theft</Link>
+            <span className="text-slate-600">›</span>
+            <span className="text-gold text-sm">Garland v. Commonwealth</span>
+          </div>
+          <p className="text-gold font-medium uppercase tracking-widest mb-3 text-sm">Larceny & Theft Case Study</p>
+          <h1 className="text-4xl font-serif leading-tight mb-4">Garland v. Commonwealth</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <span>📍 Virginia Court of Appeals</span>
+            <span>📅 2011</span>
+            <span>⚖️ Virginia Code § 18.2-95</span>
+          </div>
+        </div>
+      </section>
 
-      <p>Under Virginia law, larceny is governed primarily by Virginia Code § 18.2-95, which prohibits the unlawful taking of another's property with the intent to permanently deprive the owner of it. The statute requires proof of the taking and carrying away of personal property without consent and with criminal intent. Larceny offenses vary in degree based on the value of the property stolen, with higher penalties for thefts exceeding certain thresholds. These provisions align with federal theft statutes, such as 18 U.S.C. § 641, which criminalize the theft of government property but differ in scope and application.</p>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="space-y-10">
+          <div className="bg-slate-50 rounded-2xl p-8 border-l-4 border-navy">
+            <h2 className="text-xl font-semibold text-navy mb-3">Legal Issue</h2>
+            <p className="text-slate-700 leading-relaxed">Whether the defendant had the intent to permanently deprive the owner of the property.</p>
+          </div>
 
-      <p>In this case, the defendant was charged with larceny after allegedly taking merchandise from a retail establishment without payment. The prosecution argued that the defendant intentionally concealed items and exited the store to deprive the owner permanently of the goods. The defense contended that the defendant lacked intent to steal, asserting that the items were mistakenly taken or intended to be paid for later. The factual dispute centered on the defendant's state of mind and the circumstances surrounding the alleged taking.</p>
+          <div>
+            <h2 className="text-2xl font-serif text-navy mb-4">Court Holding</h2>
+            <p className="text-slate-700 leading-relaxed text-lg">The court reversed the larceny conviction, finding that the evidence showed the defendant intended to borrow the property temporarily rather than permanently deprive the owner of it. The court held that larceny requires the intent to permanently deprive — temporary taking without intent to permanently deprive is not larceny.</p>
+          </div>
 
-      <p>The court held that the evidence was sufficient to establish the defendant's intent to steal, affirming the larceny conviction. The ruling emphasized that intent can be inferred from conduct, such as concealment and departure from the premises without payment. This case underscores the importance of the prosecution's burden to prove criminal intent beyond a reasonable doubt and highlights the challenges defendants face in disputing intent in theft cases. The decision serves as a critical precedent for Virginia criminal defense attorneys in advising clients and formulating defense strategies in larceny prosecutions.</p>
+          <div className="bg-navy text-white rounded-2xl p-8">
+            <h2 className="text-2xl font-serif mb-4 text-gold">Defense Takeaway</h2>
+            <p className="text-slate-200 leading-relaxed">Larceny requires the intent to permanently deprive the owner of the property. A defendant who takes property with the intent to return it — even if the return never occurs — may not be guilty of larceny. D.J. Rivera develops intent defenses in larceny cases where the evidence supports a claim of temporary taking.</p>
+          </div>
 
-      <div className="mt-16 bg-navy text-white p-10 rounded-3xl text-center">
-        <p className="text-xl">If you or a loved one is facing Virginia Larceny and Theft Defense charges in Virginia, our experienced defense team can evaluate the evidence against these precedents and explore every available defense, including suppression motions and sentencing mitigation.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/practice-areas/larceny-theft" className="inline-block bg-gold text-navy px-10 py-4 rounded text-lg font-medium hover:bg-amber-600 transition">
-            See Our Larceny and Theft Practice Area
+          <div className="border border-slate-200 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-navy mb-3">Relevant Virginia Law</h2>
+            <p className="text-slate-600">This case involves <strong>§ 18.2-95</strong> of the Virginia Code. For a full analysis of how this statute applies to your case, consult with D.J. Rivera.</p>
+          </div>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <Link href="/case-studies/larceny-theft" className="block border border-slate-200 rounded-2xl p-6 hover:border-gold transition text-center">
+            <p className="text-navy font-medium">← Back to Larceny & Theft Case Studies</p>
           </Link>
-          <Link href="/contact" className="inline-block bg-white text-navy px-10 py-4 rounded text-lg font-medium hover:bg-slate-100 transition">
-            Contact Us Today for a Confidential Consultation
+          <Link href="/practice-areas/larceny-theft" className="block bg-navy text-white rounded-2xl p-6 hover:bg-slate-800 transition text-center">
+            <p className="font-medium">View Larceny & Theft Defense →</p>
           </Link>
         </div>
       </div>
+
+      <section className="bg-crimson text-white py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Facing Larceny & Theft Charges in Virginia?</h2>
+          <p className="text-lg mb-8">D.J. Rivera applies the lessons of cases like this one to defend clients throughout Richmond and Northern Virginia. Free consultation available 24/7.</p>
+          <Link href="/contact" className="inline-block bg-white text-crimson hover:bg-slate-100 px-10 py-4 rounded text-lg font-medium transition">
+            Get Your Free Consultation
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
