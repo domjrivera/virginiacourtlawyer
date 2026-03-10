@@ -1,139 +1,282 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { Cpu, Shield, Award, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Virginia & Federal Computer Crimes Lawyer | Child Pornography, Solicitation & CFAA Defense – Richmond & Northern VA",
-  description: "D.J. Rivera (tech-background attorney) aggressively defends all Virginia computer crimes (§18.2-152 & §18.2-374 series) and federal cyber offenses (CFAA, 18 U.S.C. §2252A, §2422(b)) in Richmond and Northern Virginia (EDVA).",
-  keywords: ["Virginia child pornography lawyer", "Northern Virginia online solicitation attorney", "18.2-374.3 defense", "federal CFAA lawyer", "EDVA computer crimes", "CSAM possession defense", "D.J. Rivera"],
+  title: "Computer Crimes Defense | Virginia & Federal Cybercrime Attorney D.J. Rivera",
+  description: "D.J. Rivera — D.Eng. Cybersecurity Analytics (GWU), CISSP, CEH, GCFE, US Cyber Command veteran. The only attorney in the US to beat the FBI & DOJ in a federal jury trial. Virginia Computer Crimes Act & CFAA defense.",
 };
 
 export default function ComputerCrimesPage() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-16 prose prose-slate max-w-none">
-      <div className="text-center mb-16">
-        <h1 className="text-5xl font-serif text-navy mb-6">Virginia & Federal Computer Crimes Defense</h1>
-        <p className="text-2xl text-crimson">§18.2-152 & §18.2-374 Series • 18 U.S.C. §1030 (CFAA) & §2252A • EDVA</p>
-        <p className="mt-8 text-xl max-w-3xl mx-auto">
-          With D.J. Rivera’s strong computer technology background, clients receive cutting-edge technical defenses for traditional computer crimes and sex-related digital offenses in both state and federal court.
-        </p>
-      </div>
+    <div className="bg-white">
 
-      {/* ==================== VIRGINIA TRADITIONAL COMPUTER CRIMES ==================== */}
-      <h2 className="text-4xl font-serif text-navy border-b border-gold pb-4 mb-12">Virginia Computer Crimes (§ 18.2-152 et seq.)</h2>
-
-      <div className="space-y-20">
-        <div>
-          <h3 className="text-2xl font-semibold text-navy">§ 18.2-152.3 — Computer Fraud</h3>
-          <div className="bg-slate-100 p-8 rounded-xl my-8 text-sm leading-relaxed border-l-4 border-crimson">
-            Any person who uses a computer or computer network, without authority and: (1) Obtains property or services by false pretenses; (2) Embezzles or commits larceny; or (3) Converts the property of another; is guilty of the crime of computer fraud.
+      {/* Hero — visually distinct from all other practice areas */}
+      <section className="bg-slate-900 text-white py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex items-center gap-3 mb-6">
+            <Cpu className="w-8 h-8 text-gold" />
+            <span className="text-gold font-medium uppercase tracking-widest text-sm">Computer Crimes Defense</span>
           </div>
-          <p><strong>Penalties:</strong> Class 5 felony (if value ≥ $1,000) or Class 1 misdemeanor.</p>
-        </div>
-
-        <div>
-          <h3 className="text-2xl font-semibold text-navy">§ 18.2-152.4 — Computer Trespass</h3>
-          <div className="bg-slate-100 p-8 rounded-xl my-8 text-sm leading-relaxed border-l-4 border-crimson">
-            It is unlawful for any person, with malicious intent or through intentionally deceptive means and without authority, to damage, alter, disable data/programs, install malware/keyloggers, etc.
+          <h1 className="text-5xl md:text-6xl font-serif leading-tight mb-6">
+            Engineering Expertise.<br />
+            <span className="text-gold">Legal Excellence.</span>
+          </h1>
+          <p className="text-xl text-slate-300 max-w-3xl mb-8 leading-relaxed">
+            When the prosecution&apos;s case rests on digital evidence — IP addresses, forensic disk images, network logs, metadata — you need more than a lawyer. You need a Computer Engineer with a D.Eng. in Cybersecurity Analytics, CISSP and CEH certifications, and US Cyber Command experience who also holds a J.D. and an Ll.M. That attorney is D.J. Rivera.
+          </p>
+          <div className="flex flex-wrap gap-3 mb-10">
+            {['D.Eng. Cybersecurity (GWU)', 'CISSP', 'CEH', 'GCFE', 'GPEN', 'GCIH', 'US Cyber Command', 'B.S. Computer Engineering', 'M.S. IT — Virginia Tech'].map((badge) => (
+              <span key={badge} className="bg-white/10 border border-white/20 text-white text-xs font-medium px-3 py-1.5 rounded-full">
+                {badge}
+              </span>
+            ))}
           </div>
-          <p><strong>Penalties:</strong> Class 1 misdemeanor; Class 6 felony if damage ≥ $1,000 or government systems affected.</p>
-        </div>
-
-        <div>
-          <h3 className="text-2xl font-semibold text-navy">§ 18.2-152.5 — Computer Invasion of Privacy</h3>
-          <div className="bg-slate-100 p-8 rounded-xl my-8 text-sm leading-relaxed border-l-4 border-crimson">
-            Intentionally examining without authority any employment, salary, credit, or identifying information relating to another person.
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link href="/contact" className="inline-block bg-crimson hover:bg-red-700 text-white px-10 py-4 rounded text-lg font-medium transition">
+              Get a Free Consultation — 24/7
+            </Link>
+            <Link href="/case-studies/computer-crimes" className="inline-block border-2 border-white/50 hover:border-white text-white px-10 py-4 rounded text-lg font-medium transition">
+              View Computer Crime Case Studies
+            </Link>
           </div>
-          <p><strong>Penalties:</strong> Class 1 misdemeanor; Class 6 felony on repeat or if used in another crime.</p>
         </div>
+      </section>
 
-        <div>
-          <h3 className="text-2xl font-semibold text-navy">§ 18.2-152.6 — Theft of Computer Services</h3>
-          <div className="bg-slate-100 p-8 rounded-xl my-8 text-sm leading-relaxed border-l-4 border-crimson">
-            Willfully obtaining computer services without authority.
+      {/* Landmark Victory Banner */}
+      <section className="bg-crimson text-white py-10">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+            <Award className="w-14 h-14 text-white flex-shrink-0 mx-auto md:mx-0" />
+            <div>
+              <div className="text-sm font-bold uppercase tracking-widest text-red-200 mb-1">Landmark Federal Jury Trial Victory</div>
+              <h2 className="text-2xl font-serif mb-2">United States v. Cassim — First Defense Victory Against FBI &amp; DOJ in Federal Music Piracy Trial</h2>
+              <p className="text-red-100 leading-relaxed">
+                D.J. Rivera is the <strong>only attorney in the United States</strong> to have won a federal jury trial against the FBI and the U.S. Department of Justice in a federal criminal copyright infringement case. The case involved the alleged leader of the world&apos;s most prolific Internet music piracy group, prosecuted in the Eastern District of Virginia. Rivera&apos;s deep technical knowledge of Internet technology, copyright law, and digital evidence provided the decisive advantage.
+              </p>
+            </div>
           </div>
-          <p><strong>Penalties:</strong> Class 1 misdemeanor; Class 6 felony if value ≥ $2,500.</p>
         </div>
+      </section>
 
-        <div>
-          <h3 className="text-2xl font-semibold text-navy">§ 18.2-152.3:1 — Transmission of Unsolicited Commercial Electronic Mail (Spam)</h3>
-          <div className="bg-slate-100 p-8 rounded-xl my-8 text-sm leading-relaxed border-l-4 border-crimson">
-            Using a computer with intent to falsify transmission information in connection with bulk spam.
+      {/* Why This Case Is Different */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-4xl font-serif text-navy mb-8 text-center">Why Computer Crime Cases Demand a Different Kind of Attorney</h2>
+          <p className="text-lg leading-relaxed text-slate-700 mb-6">
+            In a DUI case, a skilled attorney can challenge the officer&apos;s observations or the breathalyzer calibration records. In a drug case, the attorney can attack the chain of custody of the physical evidence. But in a computer crime case, the prosecution&apos;s entire case is built on digital evidence — and most defense attorneys simply do not have the technical background to challenge it. They accept the government&apos;s forensic reports, the IP address logs, and the metadata analysis at face value, because they have no choice.
+          </p>
+          <p className="text-lg leading-relaxed text-slate-700 mb-6">
+            D.J. Rivera is different. Before he was a lawyer, he was a Computer Engineer. He holds a B.S. in Computer Engineering, an M.S. in Information Technology from Virginia Tech, and a Doctor of Engineering (D.Eng.) in Cybersecurity Analytics from George Washington University. He holds six elite cybersecurity certifications — CISSP, CEH, GCFE, GPEN, GCIH, and GSLC — the same credentials held by the government&apos;s top cyber investigators. He defended critical computer networks for the United States Marine Corps under US Cyber Command. He teaches cybersecurity and AI at GWU as an Adjunct Instructor.
+          </p>
+          <p className="text-lg leading-relaxed text-slate-700">
+            When D.J. Rivera reviews the government&apos;s digital evidence in your case, he is not reading a report he barely understands. He is examining the same data, with the same technical vocabulary, and the same depth of knowledge as the investigators who collected it — and he is looking for every flaw in methodology, chain of custody, and interpretation that can be decisive at trial.
+          </p>
+        </div>
+      </section>
+
+      {/* Credentials Detail */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-serif text-navy mb-12 text-center">Credentials That Set D.J. Rivera Apart</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-slate-900 text-white rounded-2xl p-8">
+              <Cpu className="w-10 h-10 text-gold mb-4" />
+              <h3 className="text-xl font-semibold mb-3">Engineering Degrees</h3>
+              <p className="text-slate-300 text-sm leading-relaxed mb-4">
+                D.Eng. in Cybersecurity Analytics (GWU), M.S. in Information Technology (Virginia Tech), B.S. in Computer Engineering. These are not honorary titles — they represent years of rigorous technical training at the engineering level.
+              </p>
+              <div className="text-xs text-slate-400">No other Virginia criminal defense attorney holds these credentials.</div>
+            </div>
+            <div className="bg-slate-900 text-white rounded-2xl p-8">
+              <Shield className="w-10 h-10 text-gold mb-4" />
+              <h3 className="text-xl font-semibold mb-3">Government-Level Certifications</h3>
+              <p className="text-slate-300 text-sm leading-relaxed mb-4">
+                CISSP, CEH, GCFE, GPEN, GCIH, GSLC — the same certifications held by FBI cyber investigators, NSA analysts, and federal forensic examiners. When D.J. Rivera challenges the government&apos;s digital evidence, he speaks their language.
+              </p>
+              <div className="text-xs text-slate-400">Same certifications as the investigators building the case against you.</div>
+            </div>
+            <div className="bg-slate-900 text-white rounded-2xl p-8">
+              <Award className="w-10 h-10 text-gold mb-4" />
+              <h3 className="text-xl font-semibold mb-3">Proven Federal Trial Record</h3>
+              <p className="text-slate-300 text-sm leading-relaxed mb-4">
+                The only attorney in the US to beat the FBI and DOJ in a federal jury trial. Recognized as a Top 100 Trial Lawyer. Admitted in Virginia and has litigated cases in VA, DC, MD, CA, TX, NY, FL, NC, AL, AR, and other jurisdictions.
+              </p>
+              <div className="text-xs text-slate-400">Featured in BBC, New York Times, Washington Post, and Federal Computer Weekly.</div>
+            </div>
           </div>
-          <p><strong>Penalties:</strong> Class 1 misdemeanor; Class 6 felony for high volume.</p>
         </div>
+      </section>
 
-        <div>
-          <h3 className="text-2xl font-semibold text-navy">§ 18.2-152.7:1 — Harassment by Computer (Cyberbullying / Cyberstalking)</h3>
-          <div className="bg-slate-100 p-8 rounded-xl my-8 text-sm leading-relaxed border-l-4 border-crimson">
-            Using a computer to communicate obscene, vulgar, profane, lewd, lascivious, or indecent language with intent to coerce, intimidate, or harass.
+      {/* How We Challenge Digital Evidence */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-serif text-navy mb-6 text-center">How D.J. Rivera Challenges Digital Evidence</h2>
+          <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+            Digital evidence is not infallible. IP addresses can be spoofed, shared, or dynamically assigned. Forensic images can be contaminated. Metadata can be manipulated. Chain of custody can be broken. D.J. Rivera knows exactly where to look.
+          </p>
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              { title: 'IP Address Attribution', desc: 'An IP address does not identify a person — it identifies a network connection. Dynamic assignment, shared networks, VPNs, Tor, and spoofing can all undermine the government\'s attribution evidence. D.J. Rivera understands these technical realities and challenges them in court.' },
+              { title: 'Forensic Image Integrity', desc: 'Digital forensic examinations must follow strict protocols to preserve the integrity of evidence. Hash value verification, write-blocker use, chain of custody documentation, and proper imaging procedures are all subject to challenge if not correctly followed.' },
+              { title: 'Metadata Analysis', desc: 'File metadata — timestamps, author fields, geolocation data — can be manipulated, misinterpreted, or incorrectly attributed. D.J. Rivera examines metadata evidence with the same rigor as the government\'s forensic examiners.' },
+              { title: 'Network Traffic Analysis', desc: 'Packet captures, log files, and network traffic analysis require deep technical expertise to interpret correctly. Errors in analysis, selective capture, and misattribution of traffic are common vulnerabilities in government digital evidence.' },
+              { title: 'Malware & Unauthorized Access', desc: 'In many computer crime cases, the defendant\'s device was compromised by malware or accessed by a third party without their knowledge. D.J. Rivera can analyze the technical evidence to identify alternative explanations for the government\'s forensic findings.' },
+              { title: 'Chain of Custody', desc: 'Digital evidence must be handled according to strict chain of custody protocols from seizure through trial. Any break in the chain — improper storage, unauthorized access, or failure to document handling — can be grounds for suppression.' },
+            ].map((item) => (
+              <div key={item.title} className="bg-white rounded-2xl p-8 border border-slate-200">
+                <h3 className="text-xl font-semibold text-navy mb-3">{item.title}</h3>
+                <p className="text-slate-600 leading-relaxed text-sm">{item.desc}</p>
+              </div>
+            ))}
           </div>
-          <p><strong>Penalty:</strong> Class 1 misdemeanor (enhanced on repeat).</p>
         </div>
-      </div>
+      </section>
 
-      {/* ==================== VIRGINIA SEX-RELATED COMPUTER CRIMES ==================== */}
-      <h2 className="text-4xl font-serif text-navy border-b border-gold pb-4 mt-24 mb-12">Virginia Sex-Related Computer Crimes (§ 18.2-374 Series)</h2>
-
-      <div className="space-y-20">
-        <div>
-          <h3 className="text-2xl font-semibold text-navy">§ 18.2-374.1 — Production or Distribution of Child Pornography</h3>
-          <div className="bg-slate-100 p-8 rounded-xl my-8 text-sm leading-relaxed border-l-4 border-crimson">
-            Any person who produces or distributes child pornography, or possesses it with intent to distribute, is guilty of a felony.
+      {/* Virginia Computer Crimes Act */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-serif text-navy mb-4">Virginia Computer Crimes Act (VCCA)</h2>
+          <p className="text-lg text-slate-600 mb-10">Virginia Code §§ 18.2-152.1 through 18.2-152.15 govern computer crimes at the state level. These statutes carry serious penalties and are frequently charged alongside federal offenses.</p>
+          <div className="space-y-8">
+            {[
+              { code: '§ 18.2-152.3', title: 'Computer Fraud', desc: 'Using a computer to obtain property, services, or money by false pretenses, embezzlement, or larceny. Class 5 felony (up to 10 years) if value ≥ $1,000; Class 6 felony for lesser amounts.' },
+              { code: '§ 18.2-152.4', title: 'Computer Trespass', desc: 'Intentionally accessing a computer without authority or exceeding authorized access to alter, damage, or destroy data. Class 1 misdemeanor to Class 6 felony depending on damage caused.' },
+              { code: '§ 18.2-152.5', title: 'Computer Invasion of Privacy', desc: 'Using a computer to examine personal information about another person without authority. Class 3 misdemeanor; Class 2 misdemeanor for financial records; Class 6 felony on repeat or if used in another crime.' },
+              { code: '§ 18.2-152.6', title: 'Theft of Computer Services', desc: 'Using a computer or network without authority to obtain services. Class 1 misdemeanor; Class 6 felony if value ≥ $2,500.' },
+              { code: '§ 18.2-152.7', title: 'Personal Trespass by Computer', desc: 'Using a computer to cause physical injury to another person. Class 6 felony; Class 3 felony if serious bodily injury results.' },
+              { code: '§ 18.2-152.7:1', title: 'Harassment by Computer', desc: 'Using a computer to communicate obscene, vulgar, or threatening language with intent to coerce, intimidate, or harass. Class 1 misdemeanor (can be enhanced on repeat offenses).' },
+              { code: '§ 18.2-374.1:1', title: 'Possession of Child Pornography', desc: 'Knowing possession of any visual representation of a minor engaged in sexually explicit conduct. Class 6 felony (first offense); Class 5 felony on subsequent offenses.' },
+              { code: '§ 18.2-374.3', title: 'Online Solicitation of a Minor', desc: 'Using a computer or electronic device to solicit, seduce, or entice a minor (or person believed to be a minor) to engage in sexual activity. Class 6 felony (enhanced to higher felonies based on age and conduct).' },
+            ].map((item) => (
+              <div key={item.code} className="border-l-4 border-crimson pl-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="bg-crimson text-white text-xs font-bold px-3 py-1 rounded">{item.code}</span>
+                  <h3 className="text-xl font-semibold text-navy">{item.title}</h3>
+                </div>
+                <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
           </div>
-          <p><strong>Penalties:</strong> 5–20+ years (mandatory minimums).</p>
         </div>
+      </section>
 
-        <div>
-          <h3 className="text-2xl font-semibold text-navy">§ 18.2-374.1:1 — Possession of Child Pornography</h3>
-          <div className="bg-slate-100 p-8 rounded-xl my-8 text-sm leading-relaxed border-l-4 border-crimson">
-            Knowing possession of any visual representation of a minor engaged in sexually explicit conduct.
+      {/* Federal Statutes */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-serif text-navy mb-4">Federal Cybercrime Statutes</h2>
+          <p className="text-lg text-slate-600 mb-4">
+            Clients in Northern Virginia are frequently charged in the Eastern District of Virginia (EDVA) — one of the most aggressive federal districts for cybercrime prosecutions in the country. D.J. Rivera has tried and won federal cases in EDVA.
+          </p>
+          <div className="bg-crimson/10 border border-crimson/20 rounded-xl p-5 mb-10">
+            <div className="flex items-start gap-3">
+              <AlertTriangle className="w-5 h-5 text-crimson flex-shrink-0 mt-0.5" />
+              <p className="text-sm text-slate-700">
+                <strong>Important:</strong> If federal investigators contact you about a computer crime, do not speak to them without an attorney present. Every statement you make can be used against you. Contact D.J. Rivera immediately.
+              </p>
+            </div>
           </div>
-          <p><strong>Penalties:</strong> Class 6 felony (first offense); enhanced on subsequent offenses.</p>
-        </div>
-
-        <div>
-          <h3 className="text-2xl font-semibold text-navy">§ 18.2-374.3 — Use of Communications Systems to Facilitate Offenses Involving Children (Online Solicitation)</h3>
-          <div className="bg-slate-100 p-8 rounded-xl my-8 text-sm leading-relaxed border-l-4 border-crimson">
-            Using a computer or electronic device to solicit, seduce, or entice a minor (or person believed to be a minor) to engage in sexual activity.
+          <div className="space-y-8">
+            {[
+              { code: '18 U.S.C. § 1030', title: 'Computer Fraud and Abuse Act (CFAA)', desc: 'The primary federal hacking law. Covers unauthorized access to protected computers, obtaining information, causing damage, fraud, password trafficking, and extortion. Applies to almost any internet-connected device. Penalties range from misdemeanors to 20+ years in federal prison. After Van Buren v. United States (2021), the definition of "exceeding authorized access" was significantly narrowed — a key defense strategy.' },
+              { code: '18 U.S.C. § 1343', title: 'Wire Fraud', desc: 'Using electronic communications in furtherance of a scheme to defraud. Frequently charged alongside CFAA. Penalties: up to 20 years (30 years if a financial institution is involved).' },
+              { code: '18 U.S.C. § 1028 & § 1028A', title: 'Identity Theft & Aggravated Identity Theft', desc: 'Knowingly using another person\'s identification to commit fraud. Aggravated identity theft carries a mandatory additional 2-year consecutive sentence that even a judge cannot reduce.' },
+              { code: '17 U.S.C. § 506 / 18 U.S.C. § 2319', title: 'Criminal Copyright Infringement', desc: 'Willful copyright infringement for commercial advantage or private financial gain. D.J. Rivera is the only attorney in the US to have won a federal jury trial against the FBI and DOJ in a criminal copyright infringement case (United States v. Cassim).' },
+              { code: '18 U.S.C. § 2252A', title: 'Child Pornography Offenses (Federal)', desc: 'Possession, receipt, distribution, or production of child sexual abuse material over the Internet. Mandatory minimum sentences of 5–20+ years. Digital forensics challenges — including IP attribution, device access, and chain of custody — are critical in these cases.' },
+              { code: '18 U.S.C. § 2422(b)', title: 'Coercion and Enticement of a Minor', desc: 'Online solicitation or grooming of a minor. Mandatory minimum sentence of 10 years; maximum of life imprisonment. Undercover law enforcement operations are common — entrapment and predisposition defenses may apply.' },
+            ].map((item) => (
+              <div key={item.code} className="bg-white rounded-2xl p-8 border border-slate-200">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="bg-navy text-white text-xs font-bold px-3 py-1 rounded">{item.code}</span>
+                  <h3 className="text-xl font-semibold text-navy">{item.title}</h3>
+                </div>
+                <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
           </div>
-          <p><strong>Penalties:</strong> Class 6 felony (can be enhanced to higher felonies).</p>
         </div>
-      </div>
+      </section>
 
-      {/* ==================== FEDERAL SECTION ==================== */}
-      <h2 className="text-4xl font-serif text-navy border-b border-gold pb-4 mt-24 mb-12">Federal Computer & Sex-Related Crimes (Eastern District of Virginia)</h2>
-
-      <div className="space-y-16">
-        <div>
-          <h3 className="text-2xl font-semibold text-navy">18 U.S.C. § 1030 — Computer Fraud and Abuse Act (CFAA)</h3>
-          <p className="text-lg">Unauthorized access, obtaining information, causing damage, fraud, etc.</p>
-          <p><strong>Penalties:</strong> Up to 10–20+ years.</p>
+      {/* Penalty Table */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-serif text-navy mb-10 text-center">Computer Crime Penalties at a Glance</h2>
+          <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+            <table className="w-full text-sm">
+              <thead className="bg-navy text-white">
+                <tr>
+                  <th className="px-6 py-4 text-left font-medium">Offense</th>
+                  <th className="px-6 py-4 text-left font-medium">Code</th>
+                  <th className="px-6 py-4 text-left font-medium">Level</th>
+                  <th className="px-6 py-4 text-left font-medium">Maximum Penalty</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 bg-white">
+                {[
+                  ['Computer Fraud (≥$1,000)', '§ 18.2-152.3', 'Class 5 Felony', 'Up to 10 years / $2,500 fine'],
+                  ['Computer Trespass (damage)', '§ 18.2-152.4', 'Class 6 Felony', 'Up to 5 years / $2,500 fine'],
+                  ['Computer Trespass (no damage)', '§ 18.2-152.4', 'Class 1 Misdemeanor', 'Up to 12 months / $2,500 fine'],
+                  ['Invasion of Privacy', '§ 18.2-152.5', 'Class 3 Misdemeanor', 'Up to $500 fine'],
+                  ['Harassment by Computer', '§ 18.2-152.7:1', 'Class 1 Misdemeanor', 'Up to 12 months / $2,500 fine'],
+                  ['Possession of Child Porn (1st)', '§ 18.2-374.1:1', 'Class 6 Felony', 'Up to 5 years'],
+                  ['Online Solicitation of Minor', '§ 18.2-374.3', 'Class 6 Felony+', 'Up to 5 years (enhanced)'],
+                  ['CFAA (federal hacking)', '18 U.S.C. § 1030', 'Federal Felony', 'Up to 20 years federal prison'],
+                  ['Criminal Copyright Infringement', '17 U.S.C. § 506', 'Federal Felony', 'Up to 5 years (first offense)'],
+                  ['Federal Child Porn (receipt)', '18 U.S.C. § 2252A', 'Federal Felony', '5–20 years mandatory minimum'],
+                  ['Coercion/Enticement of Minor', '18 U.S.C. § 2422(b)', 'Federal Felony', '10 years to life (mandatory min.)'],
+                ].map(([offense, code, level, penalty]) => (
+                  <tr key={code + offense} className="hover:bg-slate-50">
+                    <td className="px-6 py-4 font-medium text-navy">{offense}</td>
+                    <td className="px-6 py-4 text-slate-500 font-mono text-xs">{code}</td>
+                    <td className="px-6 py-4 text-slate-600">{level}</td>
+                    <td className="px-6 py-4 text-crimson font-medium">{penalty}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div>
-          <h3 className="text-2xl font-semibold text-navy">18 U.S.C. § 2252A — Child Pornography Offenses</h3>
-          <p className="text-lg">Possession, receipt, distribution, or production of child pornography via computer.</p>
-          <p><strong>Penalties:</strong> 5–20+ years (mandatory minimums).</p>
-        </div>
-        <div>
-          <h3 className="text-2xl font-semibold text-navy">18 U.S.C. § 2422(b) — Coercion and Enticement of a Minor</h3>
-          <p className="text-lg">Online solicitation/grooming of a minor.</p>
-          <p><strong>Penalties:</strong> 10 years to life (mandatory minimum 10 years).</p>
-        </div>
-      </div>
+      </section>
 
-      <h2 className="text-4xl font-serif text-navy mt-24 mb-10">Why Clients Choose D.J. Rivera for Computer Crimes</h2>
-      <ul className="list-disc pl-8 space-y-4 text-lg">
-        <li>Strong computer technology background for forensic challenges and digital evidence disputes</li>
-        <li>Expertise in authorized-access, malware attribution, and chain-of-custody issues</li>
-        <li>Proven results in both Virginia state courts and the Eastern District of Virginia</li>
-      </ul>
+      {/* Defense Strategies */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-4xl font-serif text-navy mb-8">Defense Strategies in Computer Crime Cases</h2>
+          <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
+            <p><strong className="text-navy">Challenging authorization:</strong> The CFAA&apos;s core prohibition is on &quot;unauthorized&quot; access. After the Supreme Court&apos;s decision in <em>Van Buren v. United States</em> (2021), the definition of &quot;exceeding authorized access&quot; was significantly narrowed. Many prosecutions that previously seemed straightforward now face serious legal challenges.</p>
+            <p><strong className="text-navy">Suppression of digital evidence:</strong> The Fourth Amendment applies to digital searches. Warrants must be specific and supported by probable cause. Overbroad warrants, improper execution, and failures to follow proper forensic protocols can all result in suppression of key evidence.</p>
+            <p><strong className="text-navy">Computer forensics challenges:</strong> D.J. Rivera can review the government&apos;s forensic methodology and identify flaws in how evidence was collected, preserved, analyzed, and presented. This includes challenging hash value calculations, forensic image integrity, metadata interpretation, and IP attribution.</p>
+            <p><strong className="text-navy">Lack of criminal intent:</strong> Many computer crime statutes require proof of willful or intentional conduct. Mistaken belief of authorization, lack of knowledge, and good-faith access are all viable defenses depending on the facts.</p>
+            <p><strong className="text-navy">Entrapment and predisposition:</strong> In online solicitation and child exploitation cases involving undercover law enforcement, entrapment is a recognized defense. The government must prove the defendant was predisposed to commit the crime before law enforcement initiated contact.</p>
+            <p><strong className="text-navy">Negotiating reduced charges or pretrial diversion:</strong> Not every computer crime case goes to trial. D.J. Rivera&apos;s technical expertise and legal experience allow him to negotiate from a position of strength, often achieving reduced charges, deferred prosecution agreements, or alternatives to incarceration.</p>
+          </div>
+        </div>
+      </section>
 
-      <div className="mt-20 bg-navy text-white p-12 rounded-3xl text-center">
-        <h3 className="text-4xl mb-6">Facing State or Federal Computer or Sex-Related Digital Charges?</h3>
-        <Link href="/contact" className="inline-block bg-gold hover:bg-amber-600 text-navy px-16 py-6 rounded text-2xl font-medium transition">
-          Get Your Free Consultation – 24/7 Availability
-        </Link>
-      </div>
+      {/* CTA */}
+      <section className="bg-slate-900 text-white py-20 text-center">
+        <div className="max-w-3xl mx-auto px-6">
+          <Cpu className="w-14 h-14 text-gold mx-auto mb-6" />
+          <h2 className="text-4xl font-serif mb-6">Facing State or Federal Computer Crime Charges?</h2>
+          <p className="text-xl text-slate-300 mb-4">
+            Time is critical — especially in federal cases. Contact D.J. Rivera immediately for a confidential consultation. Do not speak to investigators without an attorney.
+          </p>
+          <p className="text-slate-400 mb-10 text-sm">
+            Also available through <strong className="text-white">iCyberLaw — Rivera Law Group</strong> at{' '}
+            <a href="https://icyberlaw.com" className="text-gold hover:underline" target="_blank" rel="noopener noreferrer">icyberlaw.com</a>{' '}
+            for complex cybercrime, AI law, Internet defamation, and intellectual property matters.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="inline-block bg-gold hover:bg-amber-600 text-navy px-12 py-5 rounded text-xl font-medium transition">
+              Get Your Free Consultation — 24/7
+            </Link>
+            <Link href="/case-studies/computer-crimes" className="inline-block border-2 border-white/50 hover:border-white text-white px-12 py-5 rounded text-xl font-medium transition">
+              View Case Studies
+            </Link>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
