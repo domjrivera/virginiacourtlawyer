@@ -253,6 +253,59 @@ export default function ComputerCrimesPage() {
         </div>
       </section>
 
+      {/* Deep-Dive Sub-Pages */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-serif text-navy mb-4 text-center">In-Depth Articles on Every Computer Crime</h2>
+          <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">Each charge carries its own statutes, penalties, and defense strategies. Explore our detailed articles for the specific offense you are facing.</p>
+          <div className="mb-10">
+            <h3 className="text-xl font-semibold text-navy mb-5 uppercase tracking-widest text-sm">Virginia Computer Crimes Act</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { href: '/practice-areas/computer-crimes/computer-fraud', title: 'Computer Fraud', code: '§ 18.2-152.3', desc: 'False pretenses, embezzlement, or larceny using a computer.' },
+                { href: '/practice-areas/computer-crimes/computer-trespass', title: 'Computer Trespass / Hacking', code: '§ 18.2-152.4', desc: 'Unauthorized access with intent to alter, damage, or destroy data.' },
+                { href: '/practice-areas/computer-crimes/computer-invasion-of-privacy', title: 'Computer Invasion of Privacy', code: '§ 18.2-152.5', desc: 'Unauthorized examination of personal or financial information.' },
+                { href: '/practice-areas/computer-crimes/theft-of-computer-services', title: 'Theft of Computer Services', code: '§ 18.2-152.6', desc: 'Unauthorized use of computing resources, cloud services, or network bandwidth.' },
+                { href: '/practice-areas/computer-crimes/harassment-by-computer', title: 'Harassment by Computer', code: '§ 18.2-152.7:1', desc: 'Cyberstalking and online harassment via email, text, or social media.' },
+                { href: '/practice-areas/computer-crimes/possession-of-child-pornography', title: 'Possession of Child Pornography', code: '§ 18.2-374.1:1', desc: 'Virginia state CSAM possession — Class 6 felony with sex offender registration.' },
+                { href: '/practice-areas/computer-crimes/online-solicitation-of-a-minor', title: 'Online Solicitation of a Minor', code: '§ 18.2-374.3', desc: 'Internet solicitation of a minor or undercover officer posing as a minor.' },
+              ].map((item) => (
+                <Link key={item.href} href={item.href} className="block border border-slate-200 rounded-xl p-6 hover:border-crimson hover:shadow-md transition group">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="bg-crimson text-white text-xs font-bold px-2 py-0.5 rounded">{item.code}</span>
+                  </div>
+                  <p className="font-semibold text-navy text-base mb-1 group-hover:text-crimson transition">{item.title}</p>
+                  <p className="text-xs text-slate-500 leading-relaxed">{item.desc}</p>
+                  <p className="text-xs text-crimson font-medium mt-3">Read full article →</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-navy mb-5 uppercase tracking-widest text-sm">Federal Cybercrime Statutes</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { href: '/practice-areas/computer-crimes/computer-fraud-and-abuse-act', title: 'Computer Fraud and Abuse Act', code: '18 U.S.C. § 1030', desc: 'The primary federal hacking statute. Covers unauthorized access, damage, fraud, and extortion.' },
+                { href: '/practice-areas/computer-crimes/wire-fraud', title: 'Wire Fraud', code: '18 U.S.C. § 1343', desc: 'Electronic communications used to further a scheme to defraud. Up to 20 years.' },
+                { href: '/practice-areas/computer-crimes/identity-theft', title: 'Identity Theft & Aggravated Identity Theft', code: '18 U.S.C. §§ 1028 & 1028A', desc: '§ 1028A carries a mandatory 2-year consecutive sentence no judge can reduce.' },
+                { href: '/practice-areas/computer-crimes/criminal-copyright-infringement', title: 'Criminal Copyright Infringement', code: '17 U.S.C. § 506', desc: 'D.J. Rivera is the ONLY attorney to beat the FBI & DOJ in a federal copyright jury trial.' },
+                { href: '/practice-areas/computer-crimes/federal-child-pornography', title: 'Federal Child Pornography', code: '18 U.S.C. § 2252A', desc: 'Mandatory minimums of 5–20 years. Technical forensic defense is critical.' },
+                { href: '/practice-areas/computer-crimes/coercion-enticement-of-minor', title: 'Coercion & Enticement of Minor', code: '18 U.S.C. § 2422(b)', desc: '10-year mandatory minimum to life. Entrapment defense available in undercover cases.' },
+              ].map((item) => (
+                <Link key={item.href} href={item.href} className="block border border-slate-200 rounded-xl p-6 hover:border-navy hover:shadow-md transition group">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="bg-navy text-white text-xs font-bold px-2 py-0.5 rounded">{item.code}</span>
+                  </div>
+                  <p className="font-semibold text-navy text-base mb-1 group-hover:text-navy transition">{item.title}</p>
+                  <p className="text-xs text-slate-500 leading-relaxed">{item.desc}</p>
+                  <p className="text-xs text-navy font-medium mt-3">Read full article →</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-slate-900 text-white py-20 text-center">
         <div className="max-w-3xl mx-auto px-6">
