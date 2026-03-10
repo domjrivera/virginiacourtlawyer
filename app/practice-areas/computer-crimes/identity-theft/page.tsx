@@ -99,7 +99,7 @@ export default function IdentityTheftPage() {
               <p className="text-lg text-slate-700 leading-relaxed">In <em>Flores-Figueroa v. United States</em> (2009), the Supreme Court held that § 1028A requires proof that the defendant knew the means of identification belonged to a real person — not just that they used a means of identification. This "knowledge" requirement is a powerful defense in cases where the defendant used a randomly generated number, a fictitious identity, or a means of identification without knowing it belonged to an actual person.</p>
             </div>
             <div>
-              <h3 className="text-xl font="semibold text-navy mb-3">3. Challenging Attribution of the Identification Use</h3>
+              <h3 className="text-xl font-semibold text-navy mb-3">3. Challenging Attribution of the Identification Use</h3>
               <p className="text-lg text-slate-700 leading-relaxed">The prosecution must prove that the defendant personally used the means of identification — not merely that the identification was used by someone in a scheme the defendant participated in. In cases involving multiple defendants or complex fraud schemes, the attribution of specific acts of identity use to a particular defendant is frequently contested.</p>
             </div>
             <div>
